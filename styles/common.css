@@ -1,0 +1,51 @@
+/* 浮动 */
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clear-float::after {
+  visibility: hidden;
+  font-size: 0;
+  height: 0;
+  content: '';
+  display: block;
+  clear: both;
+}
+/* 版心 */
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* 精灵图 */
+.header-icon {
+  background: url(../images/bgIcon.png) no-repeat;
+}
+.header-icon-cart {
+  background-position: 0 -42px;
+}
+.header-icon-search {
+  background-position: 0 0;
+}
+/* 背景样式 */
+.dark-bg {
+  background: #101010;
+}
+/* 对齐样式 */
+.text-right {
+  text-align: right;
+}
+/* 字体样式 */
+.orange-color {
+  color: #f60;
+}
+.grey-color {
+  color: #bfbfbf;
+}
+.dark-grey-color {
+  color: #9f9f9f;
+}
+.white-color {
+  color: #fff;
+}
