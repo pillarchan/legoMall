@@ -2,14 +2,14 @@
   margin: 0;
   padding: 0;
 }
-.carousel {
+#banner {
   width: 400px;
   height: 100px;
   position: relative;
   overflow: hidden;
 }
 
-.carousel .innerwrapper {
+#banner .innerwrapper {
   width: 2400px; /*当增加了li之后，大盒子的宽度也要相应的增加 这里增加了两个li，每个400，所以ul 从原来的1600变成了2400*/
   height: 100px;
   list-style: none;
@@ -17,22 +17,22 @@
   left: -400px;
 }
 
-.innerwrapper li {
+#banner .innerwrapper li {
   width: 400px;
   height: 100px;
   float: left;
 }
-.innerwrapper li a {
+#banner .innerwrapper li a {
   display: block;
 }
 
-.innerwrapper li a img {
+#banner .innerwrapper li a img {
   width: 400px;
   height: 100px;
   display: block;
 }
 
-.btnleft {
+#banner .btnleft {
   width: 20px;
   height: 50px;
   position: absolute;
@@ -42,10 +42,10 @@
   background-image: url(../images/nav.png);
   background-position: -10px 4px;
   cursor: pointer;
-  z-index: 100;
+  z-index: 2;
 }
 
-.btnright {
+#banner .btnright {
   width: 20px;
   height: 50px;
   position: absolute;
@@ -55,30 +55,30 @@
   background-image: url(../images/nav.png);
   background-position: -54px 4px;
   cursor: pointer;
-  z-index: 100;
+  z-index: 2;
 }
 
 /*控制按钮开始*/
 
-.controls {
-  width: 96px;
+#banner .controls {
+  width: 160px;
   position: absolute;
   left: 152px;
   bottom: 10px;
   list-style: none;
 }
-.controls li {
+#banner .controls li {
   width: 20px;
   height: 20px;
   background-color: gold;
   float: left;
-  margin-right: 5px;
+  margin-right: 12px;
   text-align: center;
   border-radius: 10px;
   cursor: pointer;
 }
 
-.controls li.current {
+#banner .controls li.current {
   background-color: aqua;
   color: #fff;
 }

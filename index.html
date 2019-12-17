@@ -14,21 +14,23 @@
   </head>
   <body>
       <script type="text/javascript">
-	    	//主轮播图
-			$("#banner").tyslide({
+            //主轮播图
+            jQuery(function(){
+                $("#banner").tyslide({
 				boxh:430,//盒子的高度
 				w:1000,//盒子的宽度
 				h:400,//图片的高度
 				isShow:true,//是否显示控制器
 				isShowBtn:true,//是否显示左右按钮
-				controltop:40,//控制按钮上下偏移的位置,要将按钮向下移动   首先保证boxh 高度>图片 h
+				controltop:6,//控制按钮上下偏移的位置,要将按钮向下移动   首先保证boxh 高度>图片 h
 				controlsW:20,//控制按钮宽度
 				controlsH:20,//控制按钮高度
-				radius:0,//控制按钮圆角度数
+				radius:10,//控制按钮圆角度数
 				controlsColor:"#d7d7d7",//普通控制按钮的颜色
 				controlsCurrentColor:"#ff6600",//当前控制按钮的颜色
 				isShowNum:true //是否显示数字
-			});
+			});})
+			
 	    </script>
     <!-- 头部 -->
     <header id="header">
@@ -716,7 +718,29 @@
       </div>
     </section>
     <!-- 今日推荐 -->
-    <section id="daily-recommend"></section>
+    <section id="daily-recommend" class="wrapper">
+        <h3><p>乐购·今日推荐</p></h3>
+        <dl class="clear-float">
+            <dd><ul>
+                <li class="text-center pt5"><img class="img140" src="./images/index06_05.jpg" alt=""></li>
+                <li class="pt5"><img src="./images/index05_18.jpg" alt=""></li>
+                <li class="daily-recommend-product-font pl5">黑爵青蜂侠六键电竞游戏鼠标<br>
+                    <span class="darkorange-color">全国联保 一年免费包换</span></li>                
+                <li class="daily-recommend-price-font darkorange-color">￥:299</li>
+            </ul></dd>
+            <dd>1111</dd>
+            <dd>1111</dd>
+            <dd>1111</dd>
+            <dd>1111</dd>
+            <dd>1111</dd>
+            <dd>1111</dd>
+            <dd>1111</dd>
+            <dd>1111</dd>
+            <dd>1111</dd>
+            <dd>1111</dd>
+            <dd>1111</dd>
+        </dl>
+    </section>
     <!-- 图书电子书 -->
     <section id="ebook"></section>
     <!-- 服装 -->
