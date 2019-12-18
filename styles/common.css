@@ -36,6 +36,12 @@
   width: 140px;
   height: 140px;
 }
+.w100 {
+  width: 100%;
+}
+.h100 {
+  height: 100%;
+}
 /* 背景样式 */
 .dark-bg {
   background: #101010;

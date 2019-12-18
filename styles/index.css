@@ -197,3 +197,261 @@
 #daily-recommend > dl dd:nth-child(6n + 1) {
   margin-left: 2px;
 }
+
+/* 今日推荐 */
+#ebooks {
+  padding-top: 42px;
+  height: 470px;
+}
+/* 今日推荐左板块 */
+#ebooks .ebooks-left {
+  width: 904px;
+  height: 470px;
+}
+/* 头部标题 */
+.area-title {
+  font: 26px/34px 'SimHei';
+  height: 34px;
+  border-bottom: 6px solid #f60;
+}
+/* 头部标题 选项卡 */
+.area-title .tabs {
+  width: 300px;
+  height: 34px;
+}
+.area-title .tabs > li {
+  float: left;
+  width: 100px;
+  height: 34px;
+  font: 18px/34px 'SimHei';
+  text-align: center;
+  cursor: pointer;
+}
+.area-title .tabs > li.active {
+  background-color: #f60;
+  color: #fff;
+}
+
+#ebooks .ebooks-left .ebooks-left-container .container-left {
+  width: 238px;
+  height: 436px;
+}
+#ebooks .ebooks-left .ebooks-left-container .container-left .top {
+  height: 286px;
+}
+.container-left .list {
+  height: 150px;
+  background-color: #f9f9f9;
+}
+
+.container-left .list > li {
+  float: left;
+  width: 79px;
+  height: 28px;
+  font: 14px/28px 'SimHei';
+  padding-top: 10px;
+  text-indent: 5px;
+}
+.container-left .list > li > a {
+  color: #333;
+}
+#ebooks .ebooks-left .ebooks-left-container .ebooks-left-container-right {
+  width: 666px;
+  height: 436px;
+  background-color: #ccc;
+  display: none;
+}
+#ebooks .ebooks-left .ebooks-left-container .ebooks-left-container-right.active {
+  display: block;
+}
+#ebooks .ebooks-left .ebooks-left-container .ebooks-left-container-right > li {
+  float: left;
+  width: 164px;
+  height: 216px;
+  margin: 0 0 2px 2px;
+  background-color: #fff;
+  text-indent: 4px;
+}
+#ebooks .ebooks-left .ebooks-left-container .ebooks-left-container-right .ebooks-adv {
+  width: 330px;
+}
+#ebooks .ebooks-left .ebooks-left-container .ebooks-left-container-right .title {
+  padding-top: 16px;
+  font: 16px/20px 'MicrosoftYaHei';
+}
+
+#ebooks .ebooks-left .ebooks-left-container .ebooks-left-container-right .desc {
+  font: 12px/16px 'MicrosoftYaHei';
+  color: #ff2929;
+  padding-bottom: 12px;
+}
+#ebooks .ebooks-left .ebooks-left-container .ebooks-left-container-right .img {
+  text-align: center;
+  width: 160px;
+  height: 110px;
+}
+#ebooks .ebooks-left .ebooks-left-container .ebooks-left-container-right .price {
+  padding-top: 5px;
+  font: 14px/38px 'MicrosoftYaHei';
+  color: #ff2929;
+}
+#ebooks .ebooks-left .ebooks-left-container .ebooks-left-container-right .price > del {
+  color: #ccc;
+}
+/* 今日推荐右板块 新书畅销榜 */
+#ebooks .ebooks-bestseller {
+  margin-top: 34px;
+  width: 284px;
+  height: 442px;
+  background-color: #e6e6e6;
+}
+#ebooks .ebooks-bestseller > dl {
+  width: 280px;
+  margin: 0 auto;
+}
+#ebooks .ebooks-bestseller > dl > dt {
+  font: 24px/40px 'SimHei';
+  text-align: center;
+  margin-top: 2px;
+  background-color: #fff;
+}
+#ebooks .ebooks-bestseller > dl > dd {
+  font: 14px/40px 'SimHei';
+  margin-top: 2px;
+  background-color: #fff;
+  cursor: pointer;
+}
+#ebooks .ebooks-bestseller > dl > dd > .num {
+  float: left;
+  width: 22px;
+  height: 40px;
+  background: #fff;
+  text-align: center;
+  bottom: 2px;
+}
+#ebooks .ebooks-bestseller > dl > dd.current {
+  margin-top: 0;
+  font: 14px/16px 'SimHei';
+}
+#ebooks .ebooks-bestseller > dl > dd.current > .detail {
+  display: block;
+}
+#ebooks .ebooks-bestseller > dl > dd.current > .title {
+  display: none;
+}
+#ebooks .ebooks-bestseller > dl > dd > .detail {
+  display: none;
+}
+#ebooks .ebooks-bestseller > dl > dd > .title {
+  display: block;
+}
+#ebooks .ebooks-bestseller > dl > dd > .detail > img {
+  margin-right: 10px;
+}
+/* 服装  */
+#clothing {
+  padding-top: 44px;
+}
+
+.product-container {
+  height: 500px;
+}
+.product-container .container-left {
+  width: 238px;
+  height: 500px;
+}
+.product-container .container-left .top {
+  height: 350px;
+}
+.product-container .product-container-right {
+  width: 962px;
+  height: 500px;
+  background-color: #ccc;
+}
+.product-container .product-container-right .top {
+  width: 962px;
+  height: 338px;
+}
+.product-container .product-container-right .top > li {
+  float: left;
+  height: 338px;
+  margin: 0 0 2px 2px;
+  background-color: #fff;
+}
+.product-container .product-container-right .top > li:first-child {
+  width: 424px;
+}
+.product-container .product-container-right .top > li:nth-child(n + 2) {
+  width: 176px;
+}
+.product-container .product-container-right .top > li > p {
+  padding-left: 8px;
+}
+.product-container .product-container-right .top > li > .title {
+  font: 16px/24px 'MicrosoftYaHei';
+  height: 24px;
+  color: #333;
+}
+.product-container .product-container-right .top > li > .desc {
+  font: 14px/22px 'MicrosoftYaHei';
+  height: 22px;
+  color: #999;
+}
+.product-container .product-container-right .top > li > .discounting {
+  padding-top: 6px;
+}
+.product-container .product-container-right .top > li > .discounting > span {
+  display: block;
+  width: 106px;
+  height: 20px;
+  font: 12px/20px 'MicrosoftYaHei';
+  color: #fff;
+  background-color: #f32;
+  text-align: center;
+  border-radius: 8px;
+}
+.product-container .product-container-right .top > li > .img {
+  padding: 22px 0 0;
+}
+.product-container .product-container-right .top > li > .img > img {
+  width: 176px;
+  height: 244px;
+}
+.product-container .product-container-right .bottom > li {
+  float: left;
+  height: 158px;
+  margin: 0 0 2px 2px;
+  background-color: #fff;
+}
+.product-container .product-container-right .bottom > li:first-child {
+  width: 424px;
+}
+.product-container .product-container-right .bottom > li:nth-child(n + 2) {
+  width: 176px;
+}
+.product-container .product-container-right .bottom > li > p {
+  padding-left: 8px;
+}
+.product-container .product-container-right .bottom > li > .title {
+  font: 16px/28px 'MicrosoftYaHei';
+  height: 28px;
+  color: #333;
+}
+.product-container .product-container-right .bottom > li > .desc {
+  font: 12px/12px 'MicrosoftYaHei';
+  height: 12px;
+  color: #999;
+}
+.product-container .product-container-right .bottom > li > .img {
+  padding: 6px 0 0;
+}
+.product-container .product-container-right .bottom > li > .img > img {
+  width: 176px;
+  height: 110px;
+}
+.brand-list {
+  width: 1200px;
+}
+.brand-list > li {
+  float: left;
+}

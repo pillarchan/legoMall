@@ -29,7 +29,51 @@
 				controlsColor:"#d7d7d7",//普通控制按钮的颜色
 				controlsCurrentColor:"#ff6600",//当前控制按钮的颜色
 				isShowNum:true //是否显示数字
-			});})
+            });
+            //版块轮播图
+            $(".area-advertise").tyslide({
+				boxh:216,//盒子的高度
+				w:330,//盒子的宽度
+				h:216,//图片的高度
+				isShow:true,//是否显示控制器
+				isShowBtn:true,//是否显示左右按钮
+				controltop:1,//控制按钮上下偏移的位置,要将按钮向下移动   首先保证boxh 高度>图片 h
+				controlsW:14,//控制按钮宽度
+				controlsH:2,//控制按钮高度
+				radius:0,//控制按钮圆角度数
+				controlsColor:"#fff",//普通控制按钮的颜色
+				controlsCurrentColor:"#7f7f7f",//当前控制按钮的颜色
+				isShowNum:false //是否显示数字
+            });
+            //版块轮播图
+            $(".product-advertise").tyslide({
+				boxh:338,//盒子的高度
+				w:424,//盒子的宽度
+				h:338,//图片的高度
+				isShow:true,//是否显示控制器
+				isShowBtn:true,//是否显示左右按钮
+				controltop:1,//控制按钮上下偏移的位置,要将按钮向下移动   首先保证boxh 高度>图片 h
+				controlsW:14,//控制按钮宽度
+				controlsH:2,//控制按钮高度
+				radius:0,//控制按钮圆角度数
+				controlsColor:"#fff",//普通控制按钮的颜色
+				controlsCurrentColor:"#7f7f7f",//当前控制按钮的颜色
+				isShowNum:false //是否显示数字
+            });
+            //版块选项卡
+            let $tabs=$('.tabs>li');
+            let $items=$('.ebooks-left-container-right');
+            $tabs.mouseenter(function(){
+                $(this).addClass('active').siblings().removeClass('active');
+                let $index=$(this).index();
+                $items.eq($index).show().siblings('ul').hide();
+            })
+            //热销榜
+            let $bestSellers=$('.ebooks-bestseller > dl > dd');
+            $bestSellers.mouseenter(function(){
+                $(this).addClass('current').siblings('dd').removeClass('current')
+            })
+        })
 			
 	    </script>
     <!-- 头部 -->
@@ -742,11 +786,490 @@
         </dl>
     </section>
     <!-- 图书电子书 -->
-    <section id="ebook"></section>
+    <section id="ebooks" class="ebooks wrapper clear-float">
+        <div class="ebooks-left fl">
+            <div class="area-title">
+                图书 电子书
+                <ul class="tabs fr clear-float">
+                    <li class="active">最新上架</li>
+                    <li>独家畅销</li>
+                    <li>电子书</li>
+                </ul>
+            </div>
+            <div class="ebooks-left-container clear-float">
+            <div class="container-left fl">
+                <p class="top"><a href="#"><img class="w100 h100" src="./images/index7_07.jpg" alt=""></a></p>
+                <ul class="list clear-float">
+                    <li><a href="">中小学教辅</a></li>
+                    <li><a href="">外语</a></li>
+                    <li><a href="">考试</a></li>
+                    <li><a href="">小说</a></li>
+                    <li><a href="">文学</a></li>
+                    <li><a href="">青春文学</a></li>
+                    <li><a href="">成功\励志</a></li>
+                    <li><a href="">管理</a></li>
+                    <li><a href="">历史</a></li>
+                    <li><a href="">哲学\宗教</a></li>
+                    <li><a href="">亲子\家教</a></li>
+                    <li><a href="">全部分类&gt;</a></li>
+                </ul>
+            </div>
+                <ul class="ebooks-left-container-right active fr">
+                    <li class="ebooks-adv">
+                        <div class="carousel area-advertise">
+                            <!--轮播的内容-->
+                            <ul class="innerwrapper">
+                                <li>
+                                  <a href="#"><img src="./images/demo-ebook-ppt.jpg" /></a>
+                                </li>
+                                <li>
+                                  <a href="#"><img src="./images/demo-ebook-ppt2.jpg" /></a>
+                                </li>
+                              </ul>
+                              <!--数字控制器-->
+                              <ul class="controls">
+                                <li class="current"></li>
+                                <li></li>
+                              </ul>
+                              <!--按钮控制器-->
+                              <span class="btnleft"></span>
+                              <span class="btnright"></span>
+                                  </div>
+                    </li>
+                    <li>
+                        <p class="title">奥运狂欢111</p>
+                        <p class="desc">10万种电子书 直降40%</p>
+                        <p class="img"><img src="./images/index09_05.jpg" alt=""></p>
+                        <p class="price">￥49<del>￥79</del></p>
+                    </li>
+                    <li>
+                        <p class="title">奥运狂欢111</p>
+                        <p class="desc">10万种电子书 直降40%</p>
+                        <p class="img"><img src="./images/index09_05.jpg" alt=""></p>
+                        <p class="price">￥49<del>￥79</del></p>
+                    </li>
+                    <li>
+                        <p class="title">奥运狂欢111</p>
+                        <p class="desc">10万种电子书 直降40%</p>
+                        <p class="img"><img src="./images/index09_05.jpg" alt=""></p>
+                        <p class="price">￥49<del>￥79</del></p>
+                    </li>
+                    <li>
+                        <p class="title">奥运狂欢111</p>
+                        <p class="desc">10万种电子书 直降40%</p>
+                        <p class="img"><img src="./images/index09_05.jpg" alt=""></p>
+                        <p class="price">￥49<del>￥79</del></p>
+                    </li>
+                    <li>
+                        <p class="title">奥运狂欢111</p>
+                        <p class="desc">10万种电子书 直降40%</p>
+                        <p class="img"><img src="./images/index09_05.jpg" alt=""></p>
+                        <p class="price">￥49<del>￥79</del></p>
+                    </li>
+                    <li>
+                        <p class="title">奥运狂欢111</p>
+                        <p class="desc">10万种电子书 直降40%</p>
+                        <p class="img"><img src="./images/index09_05.jpg" alt=""></p>
+                        <p class="price">￥49<del>￥79</del></p>
+                    </li>
+                </ul>
+                <ul class="ebooks-left-container-right fr">
+                    <li class="ebooks-adv">
+                        <div class="carousel area-advertise">
+                            <!--轮播的内容-->
+                            <ul class="innerwrapper">
+                                <li>
+                                  <a href="#"><img src="./images/demo-ebook-ppt.jpg" /></a>
+                                </li>
+                                <li>
+                                  <a href="#"><img src="./images/demo-ebook-ppt2.jpg" /></a>
+                                </li>
+                              </ul>
+                              <!--数字控制器-->
+                              <ul class="controls">
+                                <li class="current"></li>
+                                <li></li>
+                              </ul>
+                              <!--按钮控制器-->
+                              <span class="btnleft"></span>
+                              <span class="btnright"></span>
+                                  </div>
+                    </li>
+                    <li>
+                        <p class="title">奥运狂欢222</p>
+                        <p class="desc">10万种电子书 直降40%</p>
+                        <p class="img"><img src="./images/index09_05.jpg" alt=""></p>
+                        <p class="price">￥49<del>￥79</del></p>
+                    </li>
+                    <li>
+                        <p class="title">奥运狂欢222</p>
+                        <p class="desc">10万种电子书 直降40%</p>
+                        <p class="img"><img src="./images/index09_05.jpg" alt=""></p>
+                        <p class="price">￥49<del>￥79</del></p>
+                    </li>
+                    <li>
+                        <p class="title">奥运狂欢222</p>
+                        <p class="desc">10万种电子书 直降40%</p>
+                        <p class="img"><img src="./images/index09_05.jpg" alt=""></p>
+                        <p class="price">￥49<del>￥79</del></p>
+                    </li>
+                    <li>
+                        <p class="title">奥运狂欢222</p>
+                        <p class="desc">10万种电子书 直降40%</p>
+                        <p class="img"><img src="./images/index09_05.jpg" alt=""></p>
+                        <p class="price">￥49<del>￥79</del></p>
+                    </li>
+                    <li>
+                        <p class="title">奥运狂欢222</p>
+                        <p class="desc">10万种电子书 直降40%</p>
+                        <p class="img"><img src="./images/index09_05.jpg" alt=""></p>
+                        <p class="price">￥49<del>￥79</del></p>
+                    </li>
+                    <li>
+                        <p class="title">奥运狂欢222</p>
+                        <p class="desc">10万种电子书 直降40%</p>
+                        <p class="img"><img src="./images/index09_05.jpg" alt=""></p>
+                        <p class="price">￥49<del>￥79</del></p>
+                    </li>
+                </ul>
+                <ul class="ebooks-left-container-right fr">
+                    <li class="ebooks-adv">
+                        <div class="carousel area-advertise">
+                            <!--轮播的内容-->
+                            <ul class="innerwrapper">
+                                <li>
+                                  <a href="#"><img src="./images/demo-ebook-ppt.jpg" /></a>
+                                </li>
+                                <li>
+                                  <a href="#"><img src="./images/demo-ebook-ppt2.jpg" /></a>
+                                </li>
+                              </ul>
+                              <!--数字控制器-->
+                              <ul class="controls">
+                                <li class="current"></li>
+                                <li></li>
+                              </ul>
+                              <!--按钮控制器-->
+                              <span class="btnleft"></span>
+                              <span class="btnright"></span>
+                                  </div>
+                    </li>
+                    <li>
+                        <p class="title">奥运狂欢333</p>
+                        <p class="desc">10万种电子书 直降40%</p>
+                        <p class="img"><img src="./images/index09_05.jpg" alt=""></p>
+                        <p class="price">￥49<del>￥79</del></p>
+                    </li>
+                    <li>
+                        <p class="title">奥运狂欢333</p>
+                        <p class="desc">10万种电子书 直降40%</p>
+                        <p class="img"><img src="./images/index09_05.jpg" alt=""></p>
+                        <p class="price">￥49<del>￥79</del></p>
+                    </li>
+                    <li>
+                        <p class="title">奥运狂欢333</p>
+                        <p class="desc">10万种电子书 直降40%</p>
+                        <p class="img"><img src="./images/index09_05.jpg" alt=""></p>
+                        <p class="price">￥49<del>￥79</del></p>
+                    </li>
+                    <li>
+                        <p class="title">奥运狂欢333</p>
+                        <p class="desc">10万种电子书 直降40%</p>
+                        <p class="img"><img src="./images/index09_05.jpg" alt=""></p>
+                        <p class="price">￥49<del>￥79</del></p>
+                    </li>
+                    <li>
+                        <p class="title">奥运狂欢333</p>
+                        <p class="desc">10万种电子书 直降40%</p>
+                        <p class="img"><img src="./images/index09_05.jpg" alt=""></p>
+                        <p class="price">￥49<del>￥79</del></p>
+                    </li>
+                    <li>
+                        <p class="title">奥运狂欢333</p>
+                        <p class="desc">10万种电子书 直降40%</p>
+                        <p class="img"><img src="./images/index09_05.jpg" alt=""></p>
+                        <p class="price">￥49<del>￥79</del></p>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+        <div class="ebooks-bestseller fr">
+            <dl>
+                <dt>新书畅销榜</dt>
+                <dd class="current clear-float"><span class="num">1</span>
+                    <div class="title">就喜欢你看不惯我 又干不了</div>
+                    <div class="detail clear-float">
+                        <img class="fl" src="./images/index08_05.jpg" alt="">
+                        <p>冬月里腊月无有花采,霜打的梅花便又自开
+                        冬月里腊月无有花采,霜打的梅花便又自开
+                        冬月里腊月无有花采,霜打的梅花便又自开
+                        冬月里腊月无有花采,霜打的梅花便又自开</p>
+                    </div>
+                </dd>
+                <dd><span class="num">2</span>
+                    <div class="title">就喜欢你看不惯我 又干不了</div>
+                    <div class="detail clear-float">
+                        <img class="fl" src="./images/index08_05.jpg" alt="">
+                        <p>冬月里腊月无有花采,霜打的梅花便又自开
+                        冬月里腊月无有花采,霜打的梅花便又自开
+                        冬月里腊月无有花采,霜打的梅花便又自开
+                        冬月里腊月无有花采,霜打的梅花便又自开</p>
+                    </div>
+                </dd>
+                <dd><span class="num">3</span>
+                    <div class="title">就喜欢你看不惯我 又干不了</div>
+                    <div class="detail clear-float">
+                        <img class="fl" src="./images/index08_05.jpg" alt="">
+                        <p>冬月里腊月无有花采,霜打的梅花便又自开
+                        冬月里腊月无有花采,霜打的梅花便又自开
+                        冬月里腊月无有花采,霜打的梅花便又自开
+                        冬月里腊月无有花采,霜打的梅花便又自开</p>
+                    </div>
+                </dd>
+                <dd><span class="num">4</span>
+                    <div class="title">就喜欢你看不惯我 又干不了</div>
+                    <div class="detail clear-float">
+                        <img class="fl" src="./images/index08_05.jpg" alt="">
+                        <p>冬月里腊月无有花采,霜打的梅花便又自开
+                        冬月里腊月无有花采,霜打的梅花便又自开
+                        冬月里腊月无有花采,霜打的梅花便又自开
+                        冬月里腊月无有花采,霜打的梅花便又自开</p>
+                    </div>
+                </dd>
+                <dd><span class="num">5</span>
+                    <div class="title">就喜欢你看不惯我 又干不了</div>
+                    <div class="detail clear-float">
+                        <img class="fl" src="./images/index08_05.jpg" alt="">
+                        <p>冬月里腊月无有花采,霜打的梅花便又自开
+                        冬月里腊月无有花采,霜打的梅花便又自开
+                        冬月里腊月无有花采,霜打的梅花便又自开
+                        冬月里腊月无有花采,霜打的梅花便又自开</p>
+                    </div>
+                </dd>
+                <dd><span class="num">6</span>
+                    <div class="title">就喜欢你看不惯我 又干不了</div>
+                    <div class="detail clear-float">
+                        <img class="fl" src="./images/index08_05.jpg" alt="">
+                        <p>冬月里腊月无有花采,霜打的梅花便又自开
+                        冬月里腊月无有花采,霜打的梅花便又自开
+                        冬月里腊月无有花采,霜打的梅花便又自开
+                        冬月里腊月无有花采,霜打的梅花便又自开</p>
+                    </div>
+                </dd>
+                <dd><span class="num">7</span>
+                    <div class="title">就喜欢你看不惯我 又干不了</div>
+                    <div class="detail clear-float">
+                        <img class="fl" src="./images/index08_05.jpg" alt="">
+                        <p>冬月里腊月无有花采,霜打的梅花便又自开
+                        冬月里腊月无有花采,霜打的梅花便又自开
+                        冬月里腊月无有花采,霜打的梅花便又自开
+                        冬月里腊月无有花采,霜打的梅花便又自开</p>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+    </section>
     <!-- 服装 -->
-    <section id="clothing"></section>
+    <section id="clothing" class="clothing wrapper">
+        <div class="area-title">
+            服装
+            <ul class="tabs fr clear-float">
+                <li class="active">女装内衣</li>
+                <li>热销男装</li>
+                <li>精品鞋靴</li>
+            </ul>
+        </div>
+        <div class="product-container clear-float">
+            <div class="container-left fl">
+                <p class="top"><a href="#"><img class="w100 h100" src="./images/index7_17.jpg" alt=""></a></p>
+                <ul class="list clear-float">
+                    <li><a href="">女包</a></li>
+                    <li><a href="">防晒品</a></li>
+                    <li><a href="">短裤</a></li>
+                    <li><a href="">冰丝内裤</a></li>
+                    <li><a href="">男包</a></li>
+                    <li><a href="">功能箱包</a></li>
+                    <li><a href="">蕾丝衬衫</a></li>
+                    <li><a href="">奢侈品</a></li>
+                    <li><a href="">男鞋</a></li>
+                    <li><a href="">女包</a></li>
+                    <li><a href="">女鞋</a></li>
+                    <li><a href="">全部分类&gt;</a></li>
+                </ul>
+            </div>
+            <div class="product-container-right fr">
+                <ul class="top clear-float">
+                    <li><div class="carousel product-advertise">
+                        <!--轮播的内容-->
+                        <ul class="innerwrapper">
+                            <li>
+                              <a href="#"><img src="./images/demo-common-focus1.jpg" /></a>
+                            </li>
+                            <li>
+                              <a href="#"><img src="./images/demo-common-focus2.jpg" /></a>
+                            </li>
+                          </ul>
+                          <!--数字控制器-->
+                          <ul class="controls">
+                            <li class="current"></li>
+                            <li></li>
+                          </ul>
+                          <!--按钮控制器-->
+                          <span class="btnleft"></span>
+                          <span class="btnright"></span>
+                              </div></li>
+                    <li>
+                        <p class="title">达芙妮</p>
+                        <p class="desc">夏季凉鞋清仓</p>
+                        <p class="discounting"><span>领77元优惠券</span></p>
+                        <p class="img"><img src="./images/demo-common-right-big.gif" alt=""></p>
+                    </li>
+                    <li>
+                        <p class="title">达芙妮</p>
+                        <p class="desc">夏季凉鞋清仓</p>
+                        <p class="discounting"><span>领77元优惠券</span></p>
+                        <p class="img"><img src="./images/demo-common-right-big.gif" alt=""></p>
+                    </li>
+                    <li>
+                        <p class="title">达芙妮</p>
+                        <p class="desc">夏季凉鞋清仓</p>
+                        <p class="discounting"><span>领77元优惠券</span></p>
+                        <p class="img"><img src="./images/demo-common-right-big.gif" alt=""></p>
+                    </li>
+                </ul>
+                <ul class="bottom clear-float">
+                    <li><img class="w100 h100" src="./images/index11_08.jpg" alt=""></li>
+                    <li>
+                        <p class="title">赫嫀 暑假清凉季</p>
+                        <p class="desc">满199减30</p>
+                        <p class="img"><img src="./images/demo-common-right-small.jpg" alt=""></p>
+                    </li>
+                    <li>
+                        <p class="title">赫嫀 暑假清凉季</p>
+                        <p class="desc">满199减30</p>
+                        <p class="img"><img src="./images/demo-common-right-small.jpg" alt=""></p>
+                    </li>
+                    <li>
+                        <p class="title">赫嫀 暑假清凉季</p>
+                        <p class="desc">满199减30</p>
+                        <p class="img"><img src="./images/demo-common-right-small.jpg" alt=""></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="brand-list clear-float">
+            <li><img src="/images/logo13_11.jpg" alt=""></li>
+            <li><img src="/images/logo13_12.jpg" alt=""></li>
+            <li><img src="/images/logo13_13.jpg" alt=""></li>
+            <li><img src="/images/logo13_14.jpg" alt=""></li>
+            <li><img src="/images/logo13_15.jpg" alt=""></li>
+            <li><img src="/images/logo13_16.jpg" alt=""></li>
+            <li><img src="/images/logo13_17.jpg" alt=""></li>
+            <li><img src="/images/logo13_18.jpg" alt=""></li>
+            <li><img src="/images/logo13_19.jpg" alt=""></li>
+        </ul>
+    </section>
     <!-- 户外 -->
-    <section id="sports"></section>
+    <section id="sports" class="sports wrapper clear-float">
+        <div class="area-title">
+            服装
+            <ul class="tabs fr clear-float">
+                <li class="active">女装内衣</li>
+                <li>热销男装</li>
+                <li>精品鞋靴</li>
+            </ul>
+        </div>
+        <div class="product-container clear-float">
+            <div class="container-left fl">
+                <p class="top"><a href="#"><img class="w100 h100" src="./images/index7_17.jpg" alt=""></a></p>
+                <ul class="list clear-float">
+                    <li><a href="">女包</a></li>
+                    <li><a href="">防晒品</a></li>
+                    <li><a href="">短裤</a></li>
+                    <li><a href="">冰丝内裤</a></li>
+                    <li><a href="">男包</a></li>
+                    <li><a href="">功能箱包</a></li>
+                    <li><a href="">蕾丝衬衫</a></li>
+                    <li><a href="">奢侈品</a></li>
+                    <li><a href="">男鞋</a></li>
+                    <li><a href="">女包</a></li>
+                    <li><a href="">女鞋</a></li>
+                    <li><a href="">全部分类&gt;</a></li>
+                </ul>
+            </div>
+            <div class="product-container-right fr">
+                <ul class="top clear-float">
+                    <li><div class="carousel product-advertise">
+                        <!--轮播的内容-->
+                        <ul class="innerwrapper">
+                            <li>
+                              <a href="#"><img src="./images/demo-common-focus1.jpg" /></a>
+                            </li>
+                            <li>
+                              <a href="#"><img src="./images/demo-common-focus2.jpg" /></a>
+                            </li>
+                          </ul>
+                          <!--数字控制器-->
+                          <ul class="controls">
+                            <li class="current"></li>
+                            <li></li>
+                          </ul>
+                          <!--按钮控制器-->
+                          <span class="btnleft"></span>
+                          <span class="btnright"></span>
+                              </div></li>
+                    <li>
+                        <p class="title">达芙妮</p>
+                        <p class="desc">夏季凉鞋清仓</p>
+                        <p class="discounting"><span>领77元优惠券</span></p>
+                        <p class="img"><img src="./images/demo-common-right-big.gif" alt=""></p>
+                    </li>
+                    <li>
+                        <p class="title">达芙妮</p>
+                        <p class="desc">夏季凉鞋清仓</p>
+                        <p class="discounting"><span>领77元优惠券</span></p>
+                        <p class="img"><img src="./images/demo-common-right-big.gif" alt=""></p>
+                    </li>
+                    <li>
+                        <p class="title">达芙妮</p>
+                        <p class="desc">夏季凉鞋清仓</p>
+                        <p class="discounting"><span>领77元优惠券</span></p>
+                        <p class="img"><img src="./images/demo-common-right-big.gif" alt=""></p>
+                    </li>
+                </ul>
+                <ul class="bottom clear-float">
+                    <li><img class="w100 h100" src="./images/index11_08.jpg" alt=""></li>
+                    <li>
+                        <p class="title">赫嫀 暑假清凉季</p>
+                        <p class="desc">满199减30</p>
+                        <p class="img"><img src="./images/demo-common-right-small.jpg" alt=""></p>
+                    </li>
+                    <li>
+                        <p class="title">赫嫀 暑假清凉季</p>
+                        <p class="desc">满199减30</p>
+                        <p class="img"><img src="./images/demo-common-right-small.jpg" alt=""></p>
+                    </li>
+                    <li>
+                        <p class="title">赫嫀 暑假清凉季</p>
+                        <p class="desc">满199减30</p>
+                        <p class="img"><img src="./images/demo-common-right-small.jpg" alt=""></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="brand-list clear-float">
+            <li><img src="/images/logo13_11.jpg" alt=""></li>
+            <li><img src="/images/logo13_12.jpg" alt=""></li>
+            <li><img src="/images/logo13_13.jpg" alt=""></li>
+            <li><img src="/images/logo13_14.jpg" alt=""></li>
+            <li><img src="/images/logo13_15.jpg" alt=""></li>
+            <li><img src="/images/logo13_16.jpg" alt=""></li>
+            <li><img src="/images/logo13_17.jpg" alt=""></li>
+            <li><img src="/images/logo13_18.jpg" alt=""></li>
+            <li><img src="/images/logo13_19.jpg" alt=""></li>
+        </ul>
+    </section>
     <!-- 童装 -->
     <section id="kids"></section>
     <!-- 家居日用 -->
@@ -755,5 +1278,10 @@
     <section id="promotion"></section>
     <!-- 底部 -->
     <footer id="footer"></footer>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
   </body>
 </html>
