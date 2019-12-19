@@ -360,8 +360,10 @@
   width: 238px;
   height: 500px;
 }
-.product-container .container-left .top {
+#sports .product-container .container-left .top {
   height: 350px;
+  background-image: url('../images/160729pc-A.jpg');
+  background-clip: content-box;
 }
 .product-container .product-container-right {
   width: 962px;
@@ -454,4 +456,14 @@
 }
 .brand-list > li {
   float: left;
+  width: 133px;
+  height: 65px;
+  text-align: center;
+  line-height: 65px;
+}
+
+#kids .product-container .container-left .top {
+  height: 350px;
+  background-image: url('../images/86030026097384_y.jpg');
+  background-clip: content-box;
 }
