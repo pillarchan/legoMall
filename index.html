@@ -73,6 +73,19 @@
             $bestSellers.mouseenter(function(){
                 $(this).addClass('current').siblings('dd').removeClass('current')
             })
+            //推广商品版块移动
+            let $proSelector=$('#promotion .area-title > ul > li');
+            let $proShowItem=$('#promotion .cargoes-item');
+            let $proShowItems=$('#promotion .cargoes-item>li');
+            let $proSingleWidth=$proShowItems.width();
+            let $proItemsWidth=$proSingleWidth*$proShowItems['length'];
+            $proShowItem.css({'width':$proItemsWidth+'px'})
+            $proSelector.on("mouseenter",function(){
+                $proSelector.removeClass('active');
+                $(this).addClass('active');
+                let $index=$(this).index();
+                $proShowItem.animate({left:$proSingleWidth*-$index},1000)
+            })
         })
 			
 	    </script>
@@ -800,18 +813,18 @@
             <div class="container-left fl">
                 <p class="top"><a href="#"><img class="w100 h100" src="./images/index7_07.jpg" alt=""></a></p>
                 <ul class="list clear-float">
-                    <li><a href="">中小学教辅</a></li>
-                    <li><a href="">外语</a></li>
-                    <li><a href="">考试</a></li>
-                    <li><a href="">小说</a></li>
-                    <li><a href="">文学</a></li>
-                    <li><a href="">青春文学</a></li>
-                    <li><a href="">成功\励志</a></li>
-                    <li><a href="">管理</a></li>
-                    <li><a href="">历史</a></li>
-                    <li><a href="">哲学\宗教</a></li>
-                    <li><a href="">亲子\家教</a></li>
-                    <li><a href="">全部分类&gt;</a></li>
+                    <li><a href="#">中小学教辅</a></li>
+                    <li><a href="#">外语</a></li>
+                    <li><a href="#">考试</a></li>
+                    <li><a href="#">小说</a></li>
+                    <li><a href="#">文学</a></li>
+                    <li><a href="#">青春文学</a></li>
+                    <li><a href="#">成功\励志</a></li>
+                    <li><a href="#">管理</a></li>
+                    <li><a href="#">历史</a></li>
+                    <li><a href="#">哲学\宗教</a></li>
+                    <li><a href="#">亲子\家教</a></li>
+                    <li><a href="#">全部分类&gt;</a></li>
                 </ul>
             </div>
                 <ul class="ebooks-left-container-right active fr">
@@ -1084,18 +1097,18 @@
             <div class="container-left fl">
                 <p class="top"><a href="#"><img class="w100 h100" src="./images/index7_17.jpg" alt=""></a></p>
                 <ul class="list clear-float">
-                    <li><a href="">女包</a></li>
-                    <li><a href="">防晒品</a></li>
-                    <li><a href="">短裤</a></li>
-                    <li><a href="">冰丝内裤</a></li>
-                    <li><a href="">男包</a></li>
-                    <li><a href="">功能箱包</a></li>
-                    <li><a href="">蕾丝衬衫</a></li>
-                    <li><a href="">奢侈品</a></li>
-                    <li><a href="">男鞋</a></li>
-                    <li><a href="">女包</a></li>
-                    <li><a href="">女鞋</a></li>
-                    <li><a href="">全部分类&gt;</a></li>
+                    <li><a href="#">女包</a></li>
+                    <li><a href="#">防晒品</a></li>
+                    <li><a href="#">短裤</a></li>
+                    <li><a href="#">冰丝内裤</a></li>
+                    <li><a href="#">男包</a></li>
+                    <li><a href="#">功能箱包</a></li>
+                    <li><a href="#">蕾丝衬衫</a></li>
+                    <li><a href="#">奢侈品</a></li>
+                    <li><a href="#">男鞋</a></li>
+                    <li><a href="#">女包</a></li>
+                    <li><a href="#">女鞋</a></li>
+                    <li><a href="#">全部分类&gt;</a></li>
                 </ul>
             </div>
             <div class="product-container-right fr">
@@ -1123,19 +1136,19 @@
                         <p class="title">达芙妮</p>
                         <p class="desc">夏季凉鞋清仓</p>
                         <p class="discounting"><span>领77元优惠券</span></p>
-                        <p class="img"><img src="./images/demo-common-right-big.gif" alt=""></p>
+                        <p class="img" style="background-image: url(./images/index100_05.jpg);"></p>
                     </li>
                     <li>
                         <p class="title">达芙妮</p>
                         <p class="desc">夏季凉鞋清仓</p>
                         <p class="discounting"><span>领77元优惠券</span></p>
-                        <p class="img"><img src="./images/demo-common-right-big.gif" alt=""></p>
+                        <p class="img" style="background-image: url(./images/index100_05.jpg);"></p>
                     </li>
                     <li>
                         <p class="title">达芙妮</p>
                         <p class="desc">夏季凉鞋清仓</p>
                         <p class="discounting"><span>领77元优惠券</span></p>
-                        <p class="img"><img src="./images/demo-common-right-big.gif" alt=""></p>
+                        <p class="img" style="background-image: url(./images/index100_05.jpg);"></p>
                     </li>
                 </ul>
                 <ul class="bottom clear-float">
@@ -1143,17 +1156,17 @@
                     <li>
                         <p class="title">赫嫀 暑假清凉季</p>
                         <p class="desc">满199减30</p>
-                        <p class="img"><img src="./images/demo-common-right-small.jpg" alt=""></p>
+                        <p class="img" style="background-image: url(./images/index100_11.jpg);"></p>
                     </li>
                     <li>
                         <p class="title">赫嫀 暑假清凉季</p>
                         <p class="desc">满199减30</p>
-                        <p class="img"><img src="./images/demo-common-right-small.jpg" alt=""></p>
+                        <p class="img" style="background-image: url(./images/index100_11.jpg);"></p>
                     </li>
                     <li>
                         <p class="title">赫嫀 暑假清凉季</p>
                         <p class="desc">满199减30</p>
-                        <p class="img"><img src="./images/demo-common-right-small.jpg" alt=""></p>
+                        <p class="img" style="background-image: url(./images/index100_11.jpg);"></p>
                     </li>
                 </ul>
             </div>
@@ -1184,18 +1197,18 @@
             <div class="container-left fl">
                 <a href="#"><p class="top"></p></a>
                 <ul class="list clear-float">
-                    <li><a href="">女包</a></li>
-                    <li><a href="">防晒品</a></li>
-                    <li><a href="">短裤</a></li>
-                    <li><a href="">冰丝内裤</a></li>
-                    <li><a href="">男包</a></li>
-                    <li><a href="">功能箱包</a></li>
-                    <li><a href="">蕾丝衬衫</a></li>
-                    <li><a href="">奢侈品</a></li>
-                    <li><a href="">男鞋</a></li>
-                    <li><a href="">女包</a></li>
-                    <li><a href="">女鞋</a></li>
-                    <li><a href="">全部分类&gt;</a></li>
+                    <li><a href="#">女包</a></li>
+                    <li><a href="#">防晒品</a></li>
+                    <li><a href="#">短裤</a></li>
+                    <li><a href="#">冰丝内裤</a></li>
+                    <li><a href="#">男包</a></li>
+                    <li><a href="#">功能箱包</a></li>
+                    <li><a href="#">蕾丝衬衫</a></li>
+                    <li><a href="#">奢侈品</a></li>
+                    <li><a href="#">男鞋</a></li>
+                    <li><a href="#">女包</a></li>
+                    <li><a href="#">女鞋</a></li>
+                    <li><a href="#">全部分类&gt;</a></li>
                 </ul>
             </div>
             <div class="product-container-right fr">
@@ -1223,37 +1236,37 @@
                         <p class="title">李宁</p>
                         <p class="desc">时尚炫酷泳镜</p>
                         <p class="discounting"><span>满299减50</span></p>
-                        <p class="img"><img src="./images/demo-common-right-big.gif" alt=""></p>
+                        <p class="img" style="background-image: url('./images/160801-17862pc-C.jpg');"></p>
                     </li>
                     <li>
                         <p class="title">李宁</p>
                         <p class="desc">时尚炫酷泳镜</p>
                         <p class="discounting"><span>满299减50</span></p>
-                        <p class="img"><img src="./images/demo-common-right-big.gif" alt=""></p>
+                        <p class="img" style="background-image: url('./images/160801-17862pc-C.jpg');"></p>
                     </li>
                     <li>
                         <p class="title">李宁</p>
                         <p class="desc">时尚炫酷泳镜</p>
                         <p class="discounting"><span>满299减50</span></p>
-                        <p class="img"><img src="./images/demo-common-right-big.gif" alt=""></p>
+                        <p class="img" style="background-image: url('./images/160801-17862pc-C.jpg');"></p>
                     </li>
                 </ul>
                 <ul class="bottom clear-float">
                     <li><img class="w100 h100" src="./images/index11_08.jpg" alt=""></li>
                     <li>
-                        <p class="title">赫嫀 暑假清凉季</p>
-                        <p class="desc">满199减30</p>
-                        <p class="img"><img src="./images/demo-common-right-small.jpg" alt=""></p>
+                        <p class="title">古星 纯棉运动裤</p>
+                        <p class="desc">满498减50</p>
+                        <p class="img" style="background-image:url(./images/160729-12609pc-D.jpg)"></p>
                     </li>
                     <li>
-                        <p class="title">赫嫀 暑假清凉季</p>
-                        <p class="desc">满199减30</p>
-                        <p class="img"><img src="./images/demo-common-right-small.jpg" alt=""></p>
+                        <p class="title">古星 纯棉运动裤</p>
+                        <p class="desc">满498减50</p>
+                        <p class="img" style="background-image:url(./images/160729-12609pc-D.jpg)"></p>
                     </li>
                     <li>
-                        <p class="title">赫嫀 暑假清凉季</p>
-                        <p class="desc">满199减30</p>
-                        <p class="img"><img src="./images/demo-common-right-small.jpg" alt=""></p>
+                        <p class="title">古星 纯棉运动裤</p>
+                        <p class="desc">满498减50</p>
+                        <p class="img" style="background-image:url(./images/160729-12609pc-D.jpg)"></p>
                     </li>
                 </ul>
             </div>
@@ -1284,18 +1297,18 @@
             <div class="container-left fl">
                 <a href="#"><p class="top"></p></a>
                 <ul class="list clear-float">
-                    <li><a href="">女包</a></li>
-                    <li><a href="">防晒品</a></li>
-                    <li><a href="">短裤</a></li>
-                    <li><a href="">冰丝内裤</a></li>
-                    <li><a href="">男包</a></li>
-                    <li><a href="">功能箱包</a></li>
-                    <li><a href="">蕾丝衬衫</a></li>
-                    <li><a href="">奢侈品</a></li>
-                    <li><a href="">男鞋</a></li>
-                    <li><a href="">女包</a></li>
-                    <li><a href="">女鞋</a></li>
-                    <li><a href="">全部分类&gt;</a></li>
+                    <li><a href="#">女包</a></li>
+                    <li><a href="#">防晒品</a></li>
+                    <li><a href="#">短裤</a></li>
+                    <li><a href="#">冰丝内裤</a></li>
+                    <li><a href="#">男包</a></li>
+                    <li><a href="#">功能箱包</a></li>
+                    <li><a href="#">蕾丝衬衫</a></li>
+                    <li><a href="#">奢侈品</a></li>
+                    <li><a href="#">男鞋</a></li>
+                    <li><a href="#">女包</a></li>
+                    <li><a href="#">女鞋</a></li>
+                    <li><a href="#">全部分类&gt;</a></li>
                 </ul>
             </div>
             <div class="product-container-right fr">
@@ -1320,40 +1333,40 @@
                           <span class="btnright"></span>
                               </div></li>
                     <li>
-                        <p class="title">李宁</p>
-                        <p class="desc">时尚炫酷泳镜</p>
-                        <p class="discounting"><span>满299减50</span></p>
-                        <p class="img"><img src="./images/demo-common-right-big.gif" alt=""></p>
+                        <p class="title">笛莎</p>
+                        <p class="desc">夏清仓6.9元起</p>
+                        <p class="discounting"><span>满199减10</span></p>
+                        <p class="img" style="background-image: url(./images/demo-kids-cargo1.jpg);"></p>
                     </li>
                     <li>
-                        <p class="title">李宁</p>
-                        <p class="desc">时尚炫酷泳镜</p>
-                        <p class="discounting"><span>满299减50</span></p>
-                        <p class="img"><img src="./images/demo-common-right-big.gif" alt=""></p>
+                        <p class="title">笛莎</p>
+                        <p class="desc">夏清仓6.9元起</p>
+                        <p class="discounting"><span>满199减10</span></p>
+                        <p class="img" style="background-image: url(./images/demo-kids-cargo1.jpg);"></p>
                     </li>
                     <li>
-                        <p class="title">李宁</p>
-                        <p class="desc">时尚炫酷泳镜</p>
-                        <p class="discounting"><span>满299减50</span></p>
-                        <p class="img"><img src="./images/demo-common-right-big.gif" alt=""></p>
+                        <p class="title">笛莎</p>
+                        <p class="desc">夏清仓6.9元起</p>
+                        <p class="discounting"><span>满199减10</span></p>
+                        <p class="img" style="background-image: url(./images/demo-kids-cargo1.jpg);"></p>
                     </li>
                 </ul>
                 <ul class="bottom clear-float">
                     <li><img class="w100 h100" src="./images/index11_08.jpg" alt=""></li>
-                    <li>
-                        <p class="title">赫嫀 暑假清凉季</p>
-                        <p class="desc">满199减30</p>
-                        <p class="img"><img src="./images/demo-common-right-small.jpg" alt=""></p>
+                    <li style="background-image: url(./images/demo-kids-cargo2.jpg);">
+                        <!-- <p class="title">贝康馨童装</p>
+                        <p class="desc">童裙清仓倒计时</p>
+                        <p class="img" style="background-image: url(./images/demo-kids-cargo2.jpg);"></p> -->
                     </li>
-                    <li>
-                        <p class="title">赫嫀 暑假清凉季</p>
-                        <p class="desc">满199减30</p>
-                        <p class="img"><img src="./images/demo-common-right-small.jpg" alt=""></p>
+                    <li style="background-image: url(./images/demo-kids-cargo2.jpg);">
+                        <!-- <p class="title">贝康馨童装</p>
+                        <p class="desc">童裙清仓倒计时</p>
+                        <p class="img" style="background-image: url(./images/demo-kids-cargo2.jpg);"></p> -->
                     </li>
-                    <li>
-                        <p class="title">赫嫀 暑假清凉季</p>
-                        <p class="desc">满199减30</p>
-                        <p class="img"><img src="./images/demo-common-right-small.jpg" alt=""></p>
+                    <li style="background-image: url(./images/demo-kids-cargo2.jpg);">
+                        <!-- <p class="title">贝康馨童装</p>
+                        <p class="desc">童裙清仓倒计时</p>
+                        <p class="img" style="background-image: url(./images/demo-kids-cargo2.jpg);"></p> -->
                     </li>
                 </ul>
             </div>
@@ -1371,11 +1384,234 @@
         </ul>
     </section>
     <!-- 家居日用 -->
-    <section id="householder"></section>
+    <section id="householder" class="householder wrapper pt50 clear-float" >
+        <div class="area-title">
+            家居日用
+        </div>
+        <div class="perform clear-float">
+            <div class="perform-left fl"></div>
+            <div class="perform-right fr">
+                <ul class="top clear-float">
+                    <li>
+                        <p>自营风扇低至79元</p>
+                    </li>
+                    <li><p>自营风扇低至79元</p></li>
+                    <li><p>自营风扇低至79元</p></li>
+                    <li><p>自营风扇低至79元</p></li>
+                </ul>
+                <ul class="bottom clear-float">
+                    <li>
+                        <p class="title">自营家居满额减</p>
+                        <p class="desc">爆款低至25元</p>
+                        <p class="disc">满200减60</p>
+                    </li>
+                    <li><p class="title">自营家居满额减</p>
+                        <p class="desc">爆款低至25元</p>
+                        <p class="disc">满200减60</p></li>
+                    <li><p class="title">自营家居满额减</p>
+                        <p class="desc">爆款低至25元</p>
+                        <p class="disc">满200减60</p></li>
+                    <li><p class="title">自营家居满额减</p>
+                        <p class="desc">爆款低至25元</p>
+                        <p class="disc">满200减60</p></li>
+                </ul>
+            </div>
+        </div>
+    </section>
     <!-- 推广商品 -->
-    <section id="promotion"></section>
+    <section id="promotion" class="promotion pt50 wrapper">
+            <div class="area-title orange-color clear-float">
+                    推广商品
+                    <ul class="fr clear-float">
+                        <li class="active"></li>
+                        <li></li>
+                    </ul>
+            </div>
+            <div class="cargoes-show clear-float">
+                <ul class="cargoes-item">
+                    <li> 
+                        <ul class="cargoes-list clear-float">
+                        <li>
+                            <img class="img150" src="./images/index25_12.jpg" alt="">
+                            <p class="desc">Pigeon法国制奶嘴, 无毒天然乳胶</p>
+                            <p class="price">￥：189</p>
+                            <p class="appraisal"><span class="msg shop-icon shop-icon-msg"></span> 已有<span class="darkorange-color">998</span>条评价</p>
+                        </li>
+                        <li>
+                            <img class="img150" src="./images/index25_12.jpg" alt="">
+                            <p class="desc">Pigeon法国制奶嘴, 无毒天然乳胶</p>
+                            <p class="price">￥：189</p>
+                            <p class="appraisal"><span class="msg shop-icon shop-icon-msg"></span> 已有<span class="darkorange-color">998</span>条评价</p>
+                        </li>
+                        <li>
+                            <img class="img150" src="./images/index25_12.jpg" alt="">
+                            <p class="desc">Pigeon法国制奶嘴, 无毒天然乳胶</p>
+                            <p class="price">￥：189</p>
+                            <p class="appraisal"><span class="msg shop-icon shop-icon-msg"></span> 已有<span class="darkorange-color">998</span>条评价</p>
+                        </li>
+                        <li>
+                            <img class="img150" src="./images/index25_12.jpg" alt="">
+                            <p class="desc">Pigeon法国制奶嘴, 无毒天然乳胶</p>
+                            <p class="price">￥：189</p>
+                            <p class="appraisal"><span class="msg shop-icon shop-icon-msg"></span> 已有<span class="darkorange-color">998</span>条评价</p>
+                        </li>
+                        <li>
+                            <img class="img150" src="./images/index25_12.jpg" alt="">
+                            <p class="desc">Pigeon法国制奶嘴, 无毒天然乳胶</p>
+                            <p class="price">￥：189</p>
+                            <p class="appraisal"><span class="msg shop-icon shop-icon-msg"></span> 已有<span class="darkorange-color">998</span>条评价</p>
+                        </li>
+                        <li>
+                            <img class="img150" src="./images/index25_12.jpg" alt="">
+                            <p class="desc">Pigeon法国制奶嘴, 无毒天然乳胶</p>
+                            <p class="price">￥：189</p>
+                            <p class="appraisal"><span class="msg shop-icon shop-icon-msg"></span> 已有<span class="darkorange-color">998</span>条评价</p>
+                        </li>
+                        <li>
+                            <img class="img150" src="./images/index25_12.jpg" alt="">
+                            <p class="desc">Pigeon法国制奶嘴, 无毒天然乳胶</p>
+                            <p class="price">￥：189</p>
+                            <p class="appraisal"><span class="msg shop-icon shop-icon-msg"></span> 已有<span class="darkorange-color">998</span>条评价</p>
+                        </li>
+                        <li>
+                            <img class="img150" src="./images/index25_12.jpg" alt="">
+                            <p class="desc">Pigeon法国制奶嘴, 无毒天然乳胶</p>
+                            <p class="price">￥：189</p>
+                            <p class="appraisal"><span class="msg shop-icon shop-icon-msg"></span> 已有<span class="darkorange-color">998</span>条评价</p>
+                        </li>
+                        <li>
+                            <img class="img150" src="./images/index25_12.jpg" alt="">
+                            <p class="desc">Pigeon法国制奶嘴, 无毒天然乳胶</p>
+                            <p class="price">￥：189</p>
+                            <p class="appraisal"><span class="msg shop-icon shop-icon-msg"></span> 已有<span class="darkorange-color">998</span>条评价</p>
+                        </li>
+                        <li>
+                            <img class="img150" src="./images/index25_12.jpg" alt="">
+                            <p class="desc">Pigeon法国制奶嘴, 无毒天然乳胶</p>
+                            <p class="price">￥：189</p>
+                            <p class="appraisal"><span class="msg shop-icon shop-icon-msg"></span> 已有<span class="darkorange-color">998</span>条评价</p>
+                        </li>                       
+                        </ul>
+                    </li>
+                    <li> 
+                            <ul class="cargoes-list clear-float">
+                            <li>
+                                <img class="img150" src="./images/index25_12.jpg" alt="">
+                                <p class="desc">Pigeon法国制奶嘴, 无毒天然乳胶</p>
+                                <p class="price">￥：189</p>
+                                <p class="appraisal"><span class="msg shop-icon shop-icon-msg"></span> 已有<span class="darkorange-color">998</span>条评价</p>
+                            </li>
+                            <li>
+                                <img class="img150" src="./images/index25_12.jpg" alt="">
+                                <p class="desc">Pigeon法国制奶嘴, 无毒天然乳胶</p>
+                                <p class="price">￥：189</p>
+                                <p class="appraisal"><span class="msg shop-icon shop-icon-msg"></span> 已有<span class="darkorange-color">998</span>条评价</p>
+                            </li>
+                            <li>
+                                <img class="img150" src="./images/index25_12.jpg" alt="">
+                                <p class="desc">Pigeon法国制奶嘴, 无毒天然乳胶</p>
+                                <p class="price">￥：189</p>
+                                <p class="appraisal"><span class="msg shop-icon shop-icon-msg"></span> 已有<span class="darkorange-color">998</span>条评价</p>
+                            </li>
+                            <li>
+                                <img class="img150" src="./images/index25_12.jpg" alt="">
+                                <p class="desc">Pigeon法国制奶嘴, 无毒天然乳胶</p>
+                                <p class="price">￥：189</p>
+                                <p class="appraisal"><span class="msg shop-icon shop-icon-msg"></span> 已有<span class="darkorange-color">998</span>条评价</p>
+                            </li>
+                            <li>
+                                <img class="img150" src="./images/index25_12.jpg" alt="">
+                                <p class="desc">Pigeon法国制奶嘴, 无毒天然乳胶</p>
+                                <p class="price">￥：189</p>
+                                <p class="appraisal"><span class="msg shop-icon shop-icon-msg"></span> 已有<span class="darkorange-color">998</span>条评价</p>
+                            </li>
+                            <li>
+                                <img class="img150" src="./images/index25_12.jpg" alt="">
+                                <p class="desc">Pigeon法国制奶嘴, 无毒天然乳胶</p>
+                                <p class="price">￥：189</p>
+                                <p class="appraisal"><span class="msg shop-icon shop-icon-msg"></span> 已有<span class="darkorange-color">998</span>条评价</p>
+                            </li>
+                            <li>
+                                <img class="img150" src="./images/index25_12.jpg" alt="">
+                                <p class="desc">Pigeon法国制奶嘴, 无毒天然乳胶</p>
+                                <p class="price">￥：189</p>
+                                <p class="appraisal"><span class="msg shop-icon shop-icon-msg"></span> 已有<span class="darkorange-color">998</span>条评价</p>
+                            </li>
+                            <li>
+                                <img class="img150" src="./images/index25_12.jpg" alt="">
+                                <p class="desc">Pigeon法国制奶嘴, 无毒天然乳胶</p>
+                                <p class="price">￥：189</p>
+                                <p class="appraisal"><span class="msg shop-icon shop-icon-msg"></span> 已有<span class="darkorange-color">998</span>条评价</p>
+                            </li>
+                            <li>
+                                <img class="img150" src="./images/index25_12.jpg" alt="">
+                                <p class="desc">Pigeon法国制奶嘴, 无毒天然乳胶</p>
+                                <p class="price">￥：189</p>
+                                <p class="appraisal"><span class="msg shop-icon shop-icon-msg"></span> 已有<span class="darkorange-color">998</span>条评价</p>
+                            </li>
+                            <li>
+                                <img class="img150" src="./images/index25_12.jpg" alt="">
+                                <p class="desc">Pigeon法国制奶嘴, 无毒天然乳胶</p>
+                                <p class="price">￥：189</p>
+                                <p class="appraisal"><span class="msg shop-icon shop-icon-msg"></span> 已有<span class="darkorange-color">998</span>条评价</p>
+                            </li>                       
+                            </ul>
+                    </li>                   
+                </ul>
+            </div>
+    </section>
     <!-- 底部 -->
-    <footer id="footer"></footer>
+    <footer id="footer">
+        <div class="footer-top">
+            <ul class="wrapper clear-float">
+                <li class="footer-icon footer-icon1"></li>
+                <li class="footer-icon footer-icon2"></li>
+                <li class="footer-icon footer-icon3"></li>
+                <li class="footer-icon footer-icon4"></li>
+            </ul>
+        </div>
+        <div class="content wrapper">
+                <ul class="wrapper clear-float">
+                        <li>
+                            <h3>购物指南</h3>
+                            <p><a href="#">购物流程</a></p>
+                            <p><a href="#">发票制度</a></p>
+                            <p><a href="#">账户管理</a></p>
+                            <p><a href="#">会员优惠</a></p>
+                        </li>
+                        <li><h3>支付方式</h3>
+                            <p><a href="#">货到付款</a></p>
+                            <p><a href="#">网上支付</a></p>
+                            <p><a href="#">礼品卡支付</a></p>
+                            <p><a href="#">银行转账</a></p></li>
+                        <li><h3>订单服务</h3>
+                            <p><a href="#">订单配送查询</a></p>
+                            <p><a href="#">订单状态说明</a></p>
+                            <p><a href="#">自助取消订单</a></p>
+                            <p><a href="#">自助修改订单</a></p></li>
+                        <li><h3>退换货</h3>
+                            <p><a href="#">退换货政策</a></p>
+                            <p><a href="#">自助申请退换货</a></p>
+                            <p><a href="#">退换货进度查询</a></p>
+                            <p><a href="#">退款方式和时间</a></p></li>
+                        <li><h3>商家服务</h3>
+                            <p><a href="#">商家中心</a></p>
+                            <p><a href="#">运营服务</a></p>
+                            <p><a href="#">加入唯品汇</a></p></li>
+                    </ul>
+        </div>
+        <ul class="nav wrapper clear-float">
+            <li><a href="#">公司简介</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">网站联盟</a></li>
+            <li><a href="#">乐购招商</a></li>
+            <li><a href="#">机构销售</a></li>
+            <li><a href="#">手机乐购</a></li>
+            <li><a href="#">官方Blog</a></li>
+            <li><a href="#">热词搜索</a></li>
+        </ul>
+        <p class="copyright wrapper">Copyright (C) 乐购网 2004-2016, All Rights Reserved</p>
+    </footer>
     <br>
     <br>
     <br>

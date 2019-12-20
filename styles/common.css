@@ -31,10 +31,35 @@
 .header-icon-search {
   background-position: 0 0;
 }
+.shop-icon {
+  background: url(../images/icon_shop.png) no-repeat;
+}
+.shop-icon-msg {
+  background-position: -202px -198px;
+}
+.footer-icon {
+  background: url(../images/footer_bg.png) no-repeat;
+}
+.footer-icon1 {
+  background-position: 0 0;
+}
+.footer-icon2 {
+  background-position: 0 -52px;
+}
+.footer-icon3 {
+  background-position: 0 -104px;
+}
+.footer-icon4 {
+  background-position: 0 -156px;
+}
 /* 图片大小 */
 .img140 {
   width: 140px;
   height: 140px;
+}
+.img150 {
+  width: 150px;
+  height: 150px;
 }
 .w100 {
   width: 100%;

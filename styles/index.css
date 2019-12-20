@@ -239,6 +239,7 @@
 #ebooks .ebooks-left .ebooks-left-container .container-left .top {
   height: 286px;
 }
+/* 产品左版块下部列表公共样式 */
 .container-left .list {
   height: 150px;
   background-color: #f9f9f9;
@@ -352,18 +353,13 @@
 #clothing {
   padding-top: 44px;
 }
-
+/* 展示产品的公共类 */
 .product-container {
   height: 500px;
 }
 .product-container .container-left {
   width: 238px;
   height: 500px;
-}
-#sports .product-container .container-left .top {
-  height: 350px;
-  background-image: url('../images/160729pc-A.jpg');
-  background-clip: content-box;
 }
 .product-container .product-container-right {
   width: 962px;
@@ -387,37 +383,37 @@
   width: 176px;
 }
 .product-container .product-container-right .top > li > p {
-  padding-left: 8px;
+  padding-left: 7px;
 }
 .product-container .product-container-right .top > li > .title {
-  font: 16px/24px 'MicrosoftYaHei';
-  height: 24px;
+  font: 16px/26px 'MicrosoftYaHei';
+  height: 26px;
   color: #333;
 }
 .product-container .product-container-right .top > li > .desc {
-  font: 14px/22px 'MicrosoftYaHei';
-  height: 22px;
+  font: 14px/20px 'MicrosoftYaHei';
+  height: 20px;
   color: #999;
 }
 .product-container .product-container-right .top > li > .discounting {
-  padding-top: 6px;
+  padding: 7px 0 5px;
 }
 .product-container .product-container-right .top > li > .discounting > span {
   display: block;
-  width: 106px;
+  width: 105px;
   height: 20px;
-  font: 12px/20px 'MicrosoftYaHei';
+  font: 14px/20px 'MicrosoftYaHei';
   color: #fff;
   background-color: #f32;
   text-align: center;
   border-radius: 8px;
 }
 .product-container .product-container-right .top > li > .img {
-  padding: 22px 0 0;
-}
-.product-container .product-container-right .top > li > .img > img {
-  width: 176px;
-  height: 244px;
+  width: 171px;
+  height: 262px;
+  background-repeat: no-repeat;
+  background-position: 0 -78px;
+  background-size: 171px 338px;
 }
 .product-container .product-container-right .bottom > li {
   float: left;
@@ -445,11 +441,11 @@
   color: #999;
 }
 .product-container .product-container-right .bottom > li > .img {
-  padding: 6px 0 0;
-}
-.product-container .product-container-right .bottom > li > .img > img {
   width: 176px;
-  height: 110px;
+  height: 118px;
+  background-repeat: no-repeat;
+  background-position: 0 -42px;
+  background-size: 176px 160px;
 }
 .brand-list {
   width: 1200px;
@@ -461,9 +457,193 @@
   text-align: center;
   line-height: 65px;
 }
-
+/* 户外运动 */
+#sports .product-container .container-left .top {
+  height: 350px;
+  background-image: url('../images/160729pc-A.jpg');
+  background-clip: content-box;
+}
+/* 童装 */
 #kids .product-container .container-left .top {
   height: 350px;
   background-image: url('../images/86030026097384_y.jpg');
   background-clip: content-box;
+}
+/* 家居日用 */
+#householder .perform {
+  height: 500px;
+  background-color: #ccc;
+}
+#householder .perform .perform-left {
+  margin-left: 2px;
+  width: 484px;
+  height: 498px;
+  background: url('../images/index21_05.jpg');
+}
+#householder .perform .perform-right .top > li {
+  float: left;
+  width: 176px;
+  height: 338px;
+  margin: 0 2px 2px 0;
+  background-image: url('../images/index22_05.png');
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position-y: 30px;
+}
+#householder .perform .perform-right .top > li > p {
+  position: relative;
+  top: 262px;
+  font-size: 16px;
+  color: #ff414e;
+  text-align: center;
+}
+#householder .perform .perform-right .bottom > li {
+  float: left;
+  width: 176px;
+  height: 158px;
+  margin: 0 2px 2px 0;
+  background-image: url('../images/index23_08.png');
+  background-color: #fff;
+  background-repeat: no-repeat;
+}
+#householder .perform .perform-right .bottom > li > p {
+  text-indent: 6px;
+}
+#householder .perform .perform-right .bottom > li > p.title {
+  font: 16px/20px '';
+  height: 20px;
+  color: #333;
+}
+#householder .perform .perform-right .bottom > li > p.desc {
+  font: 12px/22px '';
+  height: 22px;
+  color: #999;
+}
+#householder .perform .perform-right .bottom > li > p.disc {
+  font: 14px/20px '';
+  height: 20px;
+  color: #ff2929;
+}
+/* 推广商品 */
+#promotion .area-title > ul {
+  padding: 14px 8px 0 0;
+}
+#promotion .area-title > ul > li {
+  float: left;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-right: 10px;
+  cursor: pointer;
+}
+#promotion .area-title > ul > li.active {
+  background-color: #ff6700;
+}
+#promotion .cargoes-show {
+  width: 1200px;
+  overflow: hidden;
+}
+#promotion .cargoes-item {
+  width: 1200px;
+  position: relative;
+}
+#promotion .cargoes-item > li {
+  float: left;
+  width: 1200px;
+}
+#promotion .cargoes-item .cargoes-list > li {
+  float: left;
+  margin: 10px 8px;
+  padding: 25px 32px;
+  text-align: center;
+  cursor: pointer;
+}
+#promotion .cargoes-item .cargoes-list > li > p.desc {
+  font: 14px/18px '';
+  width: 150px;
+  text-align: left;
+  padding: 8px 0 0 8px;
+  color: #333;
+}
+#promotion .cargoes-item .cargoes-list > li > p.price {
+  font: 18px/34px '';
+  width: 150px;
+  text-align: left;
+  text-indent: 12px;
+  color: #f42a0d;
+}
+#promotion .cargoes-item .cargoes-list > li > p.appraisal {
+  font: 14px/18px '';
+  width: 150px;
+  text-align: left;
+  color: #999;
+}
+#promotion .cargoes-item .cargoes-list > li > p.appraisal .msg {
+  display: inline-block;
+  width: 26px;
+  height: 20px;
+}
+
+#promotion .cargoes-item .cargoes-list > li:hover {
+  background: #f2f2f2;
+}
+
+#footer .footer-top {
+  border-top: 6px solid #f60;
+  height: 52px;
+  padding: 20px 0;
+  background-color: #f2f2f2;
+}
+#footer .footer-top > ul {
+  width: 834px;
+  margin: 0 auto;
+}
+#footer .footer-top > ul > li {
+  float: left;
+  width: 138px;
+  height: 52px;
+}
+#footer .footer-top > ul > li:nth-child(n + 2) {
+  padding-left: 94px;
+  background-position-x: 94px;
+}
+#footer .content > ul {
+  width: 700px;
+  padding: 20px 0;
+}
+#footer .content > ul > li {
+  float: left;
+  width: 140px;
+  text-align: center;
+}
+#footer .content > ul > li > h3 {
+  font: bold 18px/30px 'SimHei';
+}
+#footer .content > ul > li > p {
+  font: 16px/30px 'SimHei';
+}
+#footer .content > ul > li > p > a {
+  color: #999;
+}
+#footer .nav {
+  width: 810px;
+  height: 14px;
+  margin: 0 auto;
+}
+#footer .nav > li {
+  float: left;
+  padding: 0 18px;
+  height: 14px;
+  font: 14px/14px '';
+}
+#footer .nav > li:nth-child(n + 2) {
+  border-left: 1px solid #333;
+}
+#footer .nav > li > a {
+  color: #333;
+}
+#footer .copyright {
+  text-align: center;
+  font: 12px/50px 'SimHei';
 }
