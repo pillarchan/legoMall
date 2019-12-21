@@ -608,6 +608,16 @@
   padding-left: 94px;
   background-position-x: 94px;
 }
+#footer .content {
+  position: relative;
+}
+#footer .content .shop-icon {
+  width: 118px;
+  height: 82px;
+  position: absolute;
+  top: 50px;
+  right: 120px;
+}
 #footer .content > ul {
   width: 700px;
   padding: 20px 0;

@@ -52,6 +52,9 @@
 .footer-icon4 {
   background-position: 0 -156px;
 }
+.footer-logo {
+  background-position: -200px -300px;
+}
 /* 图片大小 */
 .img140 {
   width: 140px;
