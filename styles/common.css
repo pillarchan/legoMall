@@ -37,6 +37,18 @@
 .shop-icon-msg {
   background-position: -202px -198px;
 }
+.shop-icon-ticket {
+  background-position: -400px -351px;
+}
+.shop-icon-ticket-font {
+  background-position: -400px -399px;
+}
+.shop-icon-cart {
+  background-position: -400px -500px;
+}
+.shop-icon-qm {
+  background-position: -400px -200px;
+}
 .footer-icon {
   background: url(../images/footer_bg.png) no-repeat;
 }
@@ -115,4 +127,40 @@
 }
 .daily-recommend-price-font {
   font: 24px/38px 'SimHei';
+}
+/* 右侧领券中心 */
+.ticket-center {
+  width: 39px;
+  height: 180px;
+  position: fixed;
+  right: 0;
+  top: 212px;
+  color: #fff;
+  z-index: 11;
+  background-color: #101010;
+}
+.ticket-center .ticket {
+  width: 39px;
+  height: 40px;
+  background-color: #ffdc0c;
+}
+.ticket-center .ticket-font {
+  width: 39px;
+  height: 100px;
+  position: relative;
+}
+.ticket-center .ticket-cart {
+  width: 39px;
+  height: 40px;
+}
+.ticket-center .ticket-font .quick-mark {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0px;
+  z-index: -1;
+  transition: all 0.5s linear;
+}
+.ticket-center .ticket-font:hover .quick-mark {
+  left: -100px;
 }

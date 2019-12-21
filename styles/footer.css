@@ -1,0 +1,68 @@
+#footer .footer-top {
+  border-top: 6px solid #f60;
+  height: 52px;
+  padding: 20px 0;
+  background-color: #f2f2f2;
+}
+#footer .footer-top > ul {
+  width: 834px;
+  margin: 0 auto;
+}
+#footer .footer-top > ul > li {
+  float: left;
+  width: 138px;
+  height: 52px;
+}
+#footer .footer-top > ul > li:nth-child(n + 2) {
+  padding-left: 94px;
+  background-position-x: 94px;
+}
+#footer .content {
+  position: relative;
+}
+#footer .content .shop-icon {
+  width: 118px;
+  height: 82px;
+  position: absolute;
+  top: 50px;
+  right: 120px;
+}
+#footer .content > ul {
+  width: 700px;
+  padding: 20px 0;
+}
+#footer .content > ul > li {
+  float: left;
+  width: 140px;
+  text-align: center;
+}
+#footer .content > ul > li > h3 {
+  font: bold 18px/30px 'SimHei';
+}
+#footer .content > ul > li > p {
+  font: 16px/30px 'SimHei';
+}
+#footer .content > ul > li > p > a {
+  color: #999;
+}
+#footer .nav {
+  width: 810px;
+  height: 14px;
+  margin: 0 auto;
+}
+#footer .nav > li {
+  float: left;
+  padding: 0 18px;
+  height: 14px;
+  font: 14px/14px '';
+}
+#footer .nav > li:nth-child(n + 2) {
+  border-left: 1px solid #333;
+}
+#footer .nav > li > a {
+  color: #333;
+}
+#footer .copyright {
+  text-align: center;
+  font: 12px/50px 'SimHei';
+}

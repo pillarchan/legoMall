@@ -1,0 +1,111 @@
+/* 头部 */
+/*顶部栏 */
+#header .top {
+  height: 28px;
+  font: 14px/28px 'SimHei';
+}
+#header .top .wrapper {
+  padding-right: 12px;
+}
+/* 搜索栏 */
+#header .search-cart {
+  padding: 4px 10px 16px 0;
+}
+#header .search-cart > ul > li {
+  float: left;
+  text-align: center;
+}
+#header .search-cart > ul > li:first-child {
+  width: 100px;
+  height: 36px;
+  font: 14px/36px 'SimHei';
+  background-color: #ff6700;
+  text-indent: 24px;
+}
+#header .search-cart > ul > li:last-child {
+  width: 98px;
+  height: 34px;
+  border: 1px solid #ccc;
+  font: 14px/34px 'SimHei';
+}
+label[for='search'] {
+  width: 440px;
+  height: 36px;
+  background-color: #ff6700;
+  background-position-x: 390px;
+  margin-right: 36px;
+}
+label[for='search'] > input {
+  width: 390px;
+  height: 34px;
+  font: 14px/34px 'SimHei';
+  text-indent: 6px;
+  border: none;
+  margin: 1px 1px;
+}
+label[for='search'] > button {
+  width: 46px;
+  height: 34px;
+  border: none;
+  cursor: pointer;
+  margin: 1px 1px;
+}
+/* 导航栏 */
+#header .nav .menu-title {
+  width: 200px;
+  height: 28px;
+  font: 14px/28px 'SimHei';
+  color: #fff;
+  background: #ff6700;
+  text-align: center;
+  position: relative;
+}
+#header .nav .menu-title > span {
+  display: inline-block;
+  position: absolute;
+  right: 35px;
+  top: 4px;
+}
+#header .nav .menu-title .logo {
+  width: 200px;
+  height: 84px;
+  background-image: url('../images/logo.png');
+  background-repeat: no-repeat;
+  background-position: 1px;
+  background-color: #ff6700;
+  position: absolute;
+  left: 0;
+  bottom: 28px;
+}
+#header .nav .nav-menu {
+  padding: 0 20px;
+}
+#header .nav .nav-menu > li {
+  float: left;
+  padding: 0 16px;
+  height: 28px;
+  font: 14px/28px 'SimHei';
+}
+#header .nav .nav-menu > li > a {
+  font-weight: bold;
+  color: #333;
+}
+/* 顶部搜索栏 */
+.search-column {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #f60;
+  height: 50px;
+  opacity: 0.8;
+  z-index: 1000;
+  display: none;
+}
+.search-column .logo {
+  width: 100px;
+  height: 42px;
+  background-image: url('../images/LogoBG.png');
+  background-size: contain;
+  margin: 4px 130px 4px 220px;
+}

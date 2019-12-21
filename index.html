@@ -7,8 +7,10 @@
     <title>乐购商城首页</title>
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/slider.css" />
+    <link rel="stylesheet" href="./styles/footer.css">
   </head>
   <body>
     <script src="./scriptes/jquery-1.11.0.js"></script>
@@ -19,6 +21,12 @@
     </script>
     <!-- 头部 -->
     <header id="header">
+        <div class="search-column">
+            <div class="wrapper clear-float">
+                <div class="logo fl"></div>
+                <div class="search-input fl"></div>
+            </div>
+        </div>
       <!-- 顶部 -->
       <div class="top dark-bg">
         <div class="wrapper text-right grey-color">
@@ -37,8 +45,9 @@
           </li>
           <li><a class="dark-grey-color" href="#">我的订单</a></li>
         </ul>
-        <label class="fr clear-float header-icon header-icon-search" for="search">
+        <label class="fr clear-float" for="search">
           <input id="search" class="grey-color" type="text" placeholder="创意文具" />
+          <button class=" header-icon header-icon-search fr"></button>
         </label>
       </div>
       <!-- 导航栏 -->
@@ -1541,6 +1550,23 @@
         </ul>
         <p class="copyright wrapper">Copyright (C) 乐购网 2004-2016, All Rights Reserved</p>
     </footer>
-    
+     <!-- 右侧领券中心 -->
+     <div class="ticket-center">
+            <div class="ticket shop-icon shop-icon-ticket"></div>
+            <div class="ticket-font shop-icon shop-icon-ticket-font">
+                <div class="quick-mark shop-icon shop-icon-qm"></div>
+            </div>
+            <div class="ticket-cart shop-icon shop-icon-cart"></div>
+        </div>
+        <!-- 左侧楼层 -->
+    <ul class="floor">
+        <li class="shop-icon"></li>
+        <li class="shop-icon"></li>
+        <li class="shop-icon"></li>
+        <li class="shop-icon"></li>
+        <li class="shop-icon"></li>
+        <li class="shop-icon"></li>
+        <li class="shop-icon"></li>
+    </ul>    
   </body>
 </html>

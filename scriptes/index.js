@@ -81,6 +81,32 @@ jQuery(function() {
     $proShowItem.animate({ left: $proSingleWidth * -$index }, 1000);
   });
   // 调用返回顶部对象
-  scrollTop.appendToBody();
+  scrollTop.appendToBody({
+    top: '70%',
+    right: '3%',
+    width: 30 + 'px',
+    height: 50 + 'px',
+    backgroundImage: ' url("../images/gototop_05.jpg")'
+  });
   scrollTop.scrollToTop();
+  //顶部搜索栏
+  $(window).on('scroll', function() {
+    if ($('html,body').scrollTop() >= 300) {
+      $('label[for=search]')
+        .css({
+          backgroundColor: '#fa3a04',
+          marginTop: '8px'
+        })
+        .appendTo($('.search-column .search-input'));
+      $('.search-column').fadeIn();
+    } else {
+      $('label[for=search]')
+        .css({
+          backgroundColor: '#ff6700',
+          marginTop: '0'
+        })
+        .appendTo($('.search-cart'));
+      $('.search-column').fadeOut();
+    }
+  });
 });
