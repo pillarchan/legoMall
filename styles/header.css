@@ -69,13 +69,22 @@ label[for='search'] > button {
 #header .nav .menu-title .logo {
   width: 200px;
   height: 84px;
-  background-image: url('../images/logo.png');
+  background-image: url('../images/LogoBG.png');
   background-repeat: no-repeat;
-  background-position: 1px;
-  background-color: #ff6700;
   position: absolute;
   left: 0;
   bottom: 28px;
+}
+#header .nav .menu-title .logo > div {
+  width: 66px;
+  height: 54px;
+  color: #fff;
+  font: 20px/24px 'SimHei';
+  margin: 20px 0 0 116px;
+}
+#header .nav .menu-title .logo > div > hr {
+  border: none;
+  border-top: 2px solid #fff;
 }
 #header .nav .nav-menu {
   padding: 0 20px;
@@ -102,7 +111,7 @@ label[for='search'] > button {
   z-index: 1000;
   display: none;
 }
-.search-column .logo {
+.search-column .search-logo {
   width: 100px;
   height: 42px;
   background-image: url('../images/LogoBG.png');

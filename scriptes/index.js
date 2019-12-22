@@ -59,14 +59,7 @@ jQuery(function() {
       .siblings('ul')
       .hide();
   });
-  //热销榜
-  let $bestSellers = $('.ebooks-bestseller > dl > dd');
-  $bestSellers.mouseenter(function() {
-    $(this)
-      .addClass('current')
-      .siblings('dd')
-      .removeClass('current');
-  });
+
   //推广商品版块移动
   let $proSelector = $('#promotion .area-title > ul > li');
   let $proShowItem = $('#promotion .cargoes-item');

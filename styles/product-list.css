@@ -1,0 +1,72 @@
+.carousel-bestseller {
+  height: 430px;
+}
+.ebooks-bestseller {
+  width: 200px;
+  height: 430px;
+  background-color: #e6e6e6;
+}
+.ebooks-bestseller > dl {
+  width: 200px;
+  margin: 0 auto;
+}
+.ebooks-bestseller > dl > dt {
+  height: 30px;
+  font: 18px/30px 'SimHei';
+  text-indent: 10px;
+  background-color: #93d56f;
+  color: #fff;
+}
+.ebooks-bestseller > dl > dd {
+  font: 14px/39px 'SimHei';
+  margin-bottom: 2px;
+  background-color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+.ebooks-bestseller > dl > dd > .num {
+  position: absolute;
+  right: 0;
+  background-color: #f60;
+  color: #fff;
+  font: 14px/20px 'SimHei';
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+.ebooks-bestseller > dl > dd:nth-child(n + 5) > .num {
+  background-color: #ccc !important;
+}
+.ebooks-bestseller > dl > dd.current {
+  margin-top: 0;
+  font: 14px/16px 'SimHei';
+}
+.ebooks-bestseller > dl > dd.current > .detail {
+  display: block;
+}
+.ebooks-bestseller > dl > dd.current > .title {
+  display: none;
+}
+.ebooks-bestseller > dl > dd > .detail {
+  display: none;
+}
+.ebooks-bestseller > dl > dd > .detail > p {
+  padding-top: 20px;
+}
+.ebooks-bestseller > dl > dd > .title > div {
+  width: 80px;
+  height: 40px;
+  background-image: url('../images/index08_05.jpg');
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  margin: 0px 10px;
+  display: block;
+}
+.ebooks-bestseller > dl > dd > .title > p {
+  padding-top: 10px;
+}
+.ebooks-bestseller > dl > dd > .detail > img {
+  width: 80px;
+  height: 100px;
+  margin: 0px 10px;
+}

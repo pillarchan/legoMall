@@ -212,29 +212,29 @@
   color: #ccc;
 }
 /* 今日推荐右板块 新书畅销榜 */
-#ebooks .ebooks-bestseller {
+.ebooks-bestseller {
   margin-top: 34px;
   width: 284px;
   height: 442px;
   background-color: #e6e6e6;
 }
-#ebooks .ebooks-bestseller > dl {
+.ebooks-bestseller > dl {
   width: 280px;
   margin: 0 auto;
 }
-#ebooks .ebooks-bestseller > dl > dt {
+.ebooks-bestseller > dl > dt {
   font: 24px/40px 'SimHei';
   text-align: center;
   margin-top: 2px;
   background-color: #fff;
 }
-#ebooks .ebooks-bestseller > dl > dd {
+.ebooks-bestseller > dl > dd {
   font: 14px/40px 'SimHei';
   margin-top: 2px;
   background-color: #fff;
   cursor: pointer;
 }
-#ebooks .ebooks-bestseller > dl > dd > .num {
+.ebooks-bestseller > dl > dd > .num {
   float: left;
   width: 22px;
   height: 40px;
@@ -242,23 +242,23 @@
   text-align: center;
   bottom: 2px;
 }
-#ebooks .ebooks-bestseller > dl > dd.current {
+.ebooks-bestseller > dl > dd.current {
   margin-top: 0;
   font: 14px/16px 'SimHei';
 }
-#ebooks .ebooks-bestseller > dl > dd.current > .detail {
+.ebooks-bestseller > dl > dd.current > .detail {
   display: block;
 }
-#ebooks .ebooks-bestseller > dl > dd.current > .title {
+.ebooks-bestseller > dl > dd.current > .title {
   display: none;
 }
-#ebooks .ebooks-bestseller > dl > dd > .detail {
+.ebooks-bestseller > dl > dd > .detail {
   display: none;
 }
-#ebooks .ebooks-bestseller > dl > dd > .title {
+.ebooks-bestseller > dl > dd > .title {
   display: block;
 }
-#ebooks .ebooks-bestseller > dl > dd > .detail > img {
+.ebooks-bestseller > dl > dd > .detail > img {
   margin-right: 10px;
 }
 /* 服装  */
