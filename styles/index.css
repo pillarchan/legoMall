@@ -76,9 +76,6 @@
   visibility: visible;
 }
 /* 今日推荐 */
-#daily-recommend {
-  padding: 10px 0 0;
-}
 #daily-recommend > h3 {
   height: 36px;
 }
@@ -509,22 +506,23 @@
   height: 280px;
   top: 50%;
   left: 50%;
+  margin-top: -140px;
   margin-left: -650px;
   background-color: #f2f2f2;
 }
 .floor > li {
-  width: 40px;
+  width: 0;
   height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  padding-left: 40px;
+  color: #fff;
   cursor: pointer;
+  /* transition: all linear 100ms; */
 }
+
 .floor > li:nth-child(1) {
   background-position: 0 -520px;
-}
-.floor > li:nth-child(1):hover {
-  background-color: #e00;
-  background-position: -40px -520px;
-  width: 100px;
-  content: '今日推荐';
 }
 .floor > li:nth-child(2) {
   background-position: 0 0;
@@ -544,3 +542,35 @@
 .floor > li:nth-child(7) {
   background-position: 0 -240px;
 }
+
+/* .floor li:hover {
+  width: 70px;
+}
+.floor li:nth-child(1):hover {
+  background-color: #ff2929;
+  background-position-x: -40px;
+}
+.floor li:nth-child(2):hover {
+      background-color: #93d56f;
+      background-position-x: -40px;
+    }    
+.floor li:nth-child(3):hover {
+  background-color: #f95827;
+  background-position-x: -40px;
+}
+.floor li:nth-child(4):hover {
+  background-color: #ba9eee;
+  background-position-x: -40px;
+}
+.floor li:nth-child(5):hover {
+  background-color: #ff7394;
+  background-position-x: -40px;
+}
+.floor li:nth-child(6):hover {
+  background-color: #c2ed51;
+  background-position-x: -40px;
+}    
+.floor li:nth-child(7):hover {
+  background-color: #1eb1a9;
+  background-position-x: -40px;
+} */

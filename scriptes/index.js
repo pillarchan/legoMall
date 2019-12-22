@@ -109,4 +109,27 @@ jQuery(function() {
       $('.search-column').fadeOut();
     }
   });
+  //左侧楼层
+  $('.floor>li')
+    .hover(
+      function() {
+        let $bgColor = ['#ff2929', '#93d56f', '#f95827', '#ba9eee', '#ff7394', '#c2ed51', '#1eb1a9'];
+        let $index = $(this).index();
+        $(this)
+          .css({ 'background-color': $bgColor[$index], 'background-position-x': '-40px' })
+          .animate({ width: 70 }, 100);
+      },
+      function() {
+        $(this).animate({ width: 0 }, 100, function() {
+          $(this).css({ 'background-color': '', 'background-position-x': 0 });
+        });
+      }
+    )
+    .click(function() {
+      let $index = $(this).index();
+      let $floors = $('.floor-container');
+      let $distanceTop = $floors.eq($index).offset().top;
+      console.log($distanceTop);
+      $('html,body').animate({ scrollTop: $distanceTop }, 500);
+    });
 });
