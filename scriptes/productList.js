@@ -14,7 +14,7 @@ jQuery(function() {
     controlsCurrentColor: '#ff6600', //当前控制按钮的颜色
     isShowNum: true //是否显示数字
   });
-  $('#supply-area').tyslide({
+  $('.supply-area').tyslide({
     boxh: 530, //盒子的高度
     w: 1200, //盒子的宽度
     h: 500, //图片的高度
@@ -27,5 +27,39 @@ jQuery(function() {
     controlsColor: '#d7d7d7', //普通控制按钮的颜色
     controlsCurrentColor: '#ff6600', //当前控制按钮的颜色
     isShowNum: false //是否显示数字
+  });
+  /**
+   * 选项卡与轮播
+   */
+  let $supplyTabs = $('.supply .product-list-title .tabs>li');
+  $supplyTabs.on('mouseenter', function() {
+    let $index = $(this).index();
+    $(this)
+      .addClass('active')
+      .siblings('li')
+      .removeClass('active');
+    let $tabsItems = $('.supply .supply-content .supply-area');
+    $tabsItems
+      .eq($index)
+      .addClass('current')
+      .siblings('.supply-area')
+      .removeClass('current');
+  });
+  /**
+   *猜你喜欢换一批
+   */
+  let $guessInner = $('.guess-favorite .guess-content .guess-inner-container');
+  let $guessListItems = $('.guess-favorite .guess-content .guess-inner-container .favorite-list');
+  let $itemsHeight = $guessListItems.height();
+  let $itemsLen = $guessListItems.length;
+  let $num = 0;
+  $guessInner.css({ height: $itemsHeight * $itemsLen + 'px' });
+  $('.guess-favorite .product-list-title > .change').on('click', function() {
+    if ($num >= $itemsLen) {
+      $num = 0;
+    }
+    console.log($num, $itemsHeight * -$num);
+    $guessInner.animate({ top: $itemsHeight * -$num }, 200);
+    $num++;
   });
 });

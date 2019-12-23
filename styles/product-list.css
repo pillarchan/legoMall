@@ -207,6 +207,12 @@
   width: 1120px;
   margin: 0 auto;
 }
+.supply .supply-content .supply-area {
+  display: none;
+}
+.supply .supply-content .supply-area.current {
+  display: block;
+}
 .supply .supply-list .items {
   float: left;
   width: 186px;
@@ -228,6 +234,56 @@
   color: #999;
 }
 .supply .supply-list .items .price {
+  font-size: 14px;
+  color: #f81816;
+}
+
+/* 猜你喜欢 */
+.guess-favorite {
+  height: 540px;
+  border-bottom: 2px solid #eee;
+}
+
+.guess-favorite .product-list-title > .change {
+  font: 16px/38px 'SimHei';
+  color: #458cfb;
+  cursor: pointer;
+}
+.guess-favorite .guess-content {
+  width: 1120px;
+  height: 496px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.guess-favorite .guess-content .guess-inner-container {
+  position: relative;
+}
+.guess-favorite .favorite-list {
+  width: 1120px;
+  height: 496px;
+}
+.guess-favorite .favorite-list .items {
+  float: left;
+  width: 186px;
+  height: 248px;
+  box-sizing: border-box;
+  padding: 25px 0 0 20px;
+  cursor: pointer;
+}
+.guess-favorite .favorite-list .items .img {
+  text-align: center;
+}
+.guess-favorite .favorite-list .items .author {
+  height: 26px;
+  font: 14px/26px 'SimHei';
+  color: #333;
+}
+.guess-favorite .favorite-list .items .press {
+  height: 24px;
+  font: 12px/24px 'SimHei';
+  color: #999;
+}
+.guess-favorite .favorite-list .items .price {
   font-size: 14px;
   color: #f81816;
 }
