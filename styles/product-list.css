@@ -1,3 +1,4 @@
+/* 轮播和热销 */
 .carousel-bestseller {
   height: 430px;
 }
@@ -18,7 +19,7 @@
   color: #fff;
 }
 .ebooks-bestseller > dl > dd {
-  font: 14px/39px 'SimHei';
+  font: 14px/38px 'SimHei';
   margin-bottom: 2px;
   background-color: #fff;
   cursor: pointer;
@@ -69,4 +70,164 @@
   width: 80px;
   height: 100px;
   margin: 0px 10px;
+}
+
+/* 图书折扣区 */
+.discounting-area {
+  width: 1200px;
+  height: 566px;
+}
+.discounting-area .content-list .title {
+  border-bottom: 6px solid #f60;
+}
+.discounting-area .content-list .title > p {
+  width: 220px;
+  height: 48px;
+  font: 24px/48px 'SimHei';
+  color: #fff;
+  background-color: #f60;
+  text-align: center;
+}
+.discounting-area .content-list .items {
+  float: left;
+  width: 210px;
+  height: 256px;
+  box-sizing: border-box;
+  margin-right: 37px;
+}
+.discounting-area .content-list .items:nth-of-type(5n) {
+  margin-right: 0;
+}
+.discounting-area .content-list .items:hover {
+  background: #f2f2f2;
+  cursor: pointer;
+}
+.discounting-area .content-list .items .img {
+  padding-top: 5px;
+  text-align: center;
+}
+.discounting-area .content-list .items .discount {
+  width: 76px;
+  height: 24px;
+  position: relative;
+}
+.discounting-area .content-list .items .discount > span {
+  position: absolute;
+  font: 14px/24px '';
+  color: #fff;
+  left: 22px;
+}
+.discounting-area .content-list .items .discount > div {
+  border: 12px solid #f42a0d;
+  border-color: #f42a0d transparent #f42a0d #f42a0d;
+}
+.discounting-area .content-list .items .desc {
+  height: 26px;
+  font: 14px/26px '';
+  text-indent: 10px;
+}
+.discounting-area .content-list .items .desc > span {
+  font: 12px/26px '';
+  padding-left: 15px;
+}
+.discounting-area .content-list .items .recommend {
+  height: 22px;
+  font: 14px/22px '';
+  text-indent: 10px;
+  color: #f42a0d;
+}
+.discounting-area .content-list .items .price {
+  height: 26px;
+  font: 18px/26px '';
+  text-indent: 10px;
+  color: #f42a0d;
+}
+/* 新书上架 */
+.new-book-shelf .new-book-shelf-left {
+  width: 904px;
+}
+.new-book-shelf .new-book-shelf-left > ul {
+  width: 900px;
+  height: 498px;
+  border: 2px solid #e6e6e6;
+  border-top: none;
+}
+.new-book-shelf .new-book-shelf-left > ul > li {
+  float: left;
+  width: 180px;
+  height: 250px;
+  box-sizing: border-box;
+  padding: 15px 0 0 20px;
+}
+.new-book-shelf .new-book-shelf-left > ul > li .img {
+  text-align: center;
+}
+.new-book-shelf .new-book-shelf-left > ul > li .author {
+  height: 26px;
+  font: 14px/26px 'SimHei';
+  color: #333;
+}
+.new-book-shelf .new-book-shelf-left > ul > li .press {
+  height: 24px;
+  font: 12px/24px 'SimHei';
+  color: #999;
+}
+.new-book-shelf .new-book-shelf-left > ul > li .price {
+  font-size: 14px;
+  color: #f81816;
+}
+.new-book-shelf .new-book-shelf-right {
+  padding-top: 38px;
+}
+.supply {
+  height: 575px;
+  border-bottom: 2px solid #eee;
+}
+.supply .product-list-title {
+  position: relative;
+}
+.supply .product-list-title > ul {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.supply .product-list-title > ul > li {
+  float: left;
+  width: 100px;
+  height: 38px;
+  font: 18px/38px 'SimHei';
+  text-align: center;
+  cursor: pointer;
+}
+.supply .product-list-title > ul > li.active {
+  background: #f60;
+  color: #fff;
+}
+.supply .supply-list {
+  width: 1120px;
+  margin: 0 auto;
+}
+.supply .supply-list .items {
+  float: left;
+  width: 186px;
+  height: 250px;
+  box-sizing: border-box;
+  padding: 15px 0 0 20px;
+}
+.supply .supply-list .items .img {
+  text-align: center;
+}
+.supply .supply-list .items .author {
+  height: 26px;
+  font: 14px/26px 'SimHei';
+  color: #333;
+}
+.supply .supply-list .items .press {
+  height: 24px;
+  font: 12px/24px 'SimHei';
+  color: #999;
+}
+.supply .supply-list .items .price {
+  font-size: 14px;
+  color: #f81816;
 }

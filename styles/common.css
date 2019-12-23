@@ -73,8 +73,8 @@
   height: 140px;
 }
 .img150 {
-  width: 150px;
-  height: 150px;
+  width: 150px !important;
+  height: 150px !important;
 }
 .w100 {
   width: 100%;
@@ -106,6 +106,9 @@
 .pt50 {
   padding-top: 50px;
 }
+.pt25 {
+  padding-top: 25px;
+}
 /* 字体样式 */
 .orange-color {
   color: #f60;
@@ -115,6 +118,9 @@
 }
 .dark-grey-color {
   color: #9f9f9f;
+}
+.grey-color-ccc {
+  color: #ccc;
 }
 .white-color {
   color: #fff;
@@ -166,3 +172,26 @@
 }
 
 /* 公用模块 */
+/* 广告栏 */
+.advertise-column {
+  width: 1200px;
+  height: 90px;
+  background: #999;
+}
+/* 产品列表标题栏 */
+.product-list-title {
+  height: 38px;
+  font: 20px/38px 'SimHei';
+  border-bottom: 6px solid #f60;
+}
+.product-list-title > p {
+  display: inline-block;
+  width: 40px;
+  font-size: 28px;
+  background-color: #f60;
+  color: #fff;
+  text-align: center;
+}
+.product-list-title > span {
+  padding-left: 5px;
+}
