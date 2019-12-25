@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>乐购商城首页</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <!-- 引入当前页面的样式 -->
+    <link rel="stylesheet" href="./styles/shop-cart.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+  </head>
+  <body>
+    <script src="./scriptes/jquery-1.11.0.js"></script>
+    <!-- 当前页要引入的JS -->
+    <script src="./scriptes/shopCart.js"></script>
+    <!-- 头部 -->
+    <header id="header">
+      <div class="search-column">
+        <div class="wrapper clear-float">
+          <div class="search-logo fl"></div>
+          <div class="search-input fl"></div>
+        </div>
+      </div>
+      <!-- 顶部 -->
+      <div class="top dark-bg">
+        <div class="wrapper text-right grey-color">
+          欢迎光临<a href="#" class="orange-color">乐购</a>，请 <a class="grey-color" href="./login.html">登陆</a>\<a
+            class="orange-color"
+            href="./register.html"
+            >注册</a
+          >
+          <div class="logo">
+            <div>
+              购物车
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 搜索和购物车 -->
+      <div class="search-cart clear-float wrapper">
+        <label class="fr clear-float" for="search">
+          <input id="search" class="grey-color" type="text" placeholder="创意文具" />
+          <button class=" header-icon header-icon-search fr"></button>
+        </label>
+      </div>
+    </header>
+    <!-- 当前页面的内容 -->
+    <section class="shop-cart wrapper">
+      <div class="deliver-area fr">
+        配送至&emsp;
+        <select name="" id="destination">
+          <option value="1">成都</option>
+          <option value="2">绵阳</option>
+          <option value="3">德阳</option>
+          <option value="4">宜宾</option>
+        </select>
+      </div>
+      <div class="clear"></div>
+      <div class="title">全部商品（<span class="allNum">2</span>）</div>
+      <table>
+        <tbody>
+          <tr class="cart-head">
+            <td class="select"><input type="checkbox" class="all-select" />全选</td>
+            <td class="goods-name">商品</td>
+            <td class="single-price">单价</td>
+            <td class="num">数量</td>
+            <td class="subtotal">小计</td>
+            <td class="operation">操作</td>
+          </tr>
+          <tr>
+            <td class="blank-column"></td>
+          </tr>
+          <tr class="cart-list cart-list-first">
+            <td class="select"><input type="checkbox" class="single-select" /></td>
+            <td class="goods-name">
+              <img src="./images/index08_05.jpg" alt="" />
+              &emsp;&emsp;从你全世界路过
+            </td>
+            <td class="single-price">41.00</td>
+            <td class="num">
+              <span class="add">+</span>
+              <input type="text" class="count" />
+              <span class="reduce">-</span>
+            </td>
+            <td class="subtotal">41.00</td>
+            <td class="operation"><a href="#">删除</a><br /><a href="#">移到我的关注</a></td>
+          </tr>
+          <tr class="cart-list">
+            <td class="select"><input type="checkbox" class="single-select" /></td>
+            <td class="goods-name">
+              <img src="./images/index08_05.jpg" alt="" />
+              &emsp;&emsp;从你全世界路过
+            </td>
+            <td class="single-price">21.99</td>
+            <td class="num">
+              <span class="add">+</span>
+              <input type="text" class="count" />
+              <span class="reduce">-</span>
+            </td>
+            <td class="subtotal">21.99</td>
+            <td class="operation"><a href="#">删除</a><br /><a href="#">移到我的关注</a></td>
+          </tr>
+          <tr class="cart-list">
+            <td class="select"><input type="checkbox" class="single-select" /></td>
+            <td class="goods-name">
+              <img src="./images/index08_05.jpg" alt="" />
+              &emsp;&emsp;从你全世界路过
+            </td>
+            <td class="single-price">11.99</td>
+            <td class="num">
+              <span class="add">+</span>
+              <input type="text" class="count" />
+              <span class="reduce">-</span>
+            </td>
+            <td class="subtotal">11.99</td>
+            <td class="operation"><a href="#">删除</a><br /><a href="#">移到我的关注</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="bill clear-float">
+        <div class="fl left clear-float">
+          <div class="fl left-side">
+            <input type="checkbox" class="all-select" /> 全选&emsp;&emsp;&emsp;<a href="">删除所有选中商品</a>
+          </div>
+          <div class="fr right-side">
+            已选择 <span class="allNum">2</span> 件商品&emsp;&emsp;<span>总价</span>
+            <span class="total">41.00</span>&emsp;&emsp;&emsp;&emsp;
+          </div>
+        </div>
+        <div class="fr pay">
+          去结算
+        </div>
+      </div>
+    </section>
+    <!-- 底部 -->
+    <footer id="footer">
+      <div class="footer-top">
+        <ul class="wrapper clear-float">
+          <li class="footer-icon footer-icon1"></li>
+          <li class="footer-icon footer-icon2"></li>
+          <li class="footer-icon footer-icon3"></li>
+          <li class="footer-icon footer-icon4"></li>
+        </ul>
+      </div>
+      <div class="content wrapper">
+        <ul class="wrapper clear-float">
+          <li>
+            <h3>购物指南</h3>
+            <p><a href="#">购物流程</a></p>
+            <p><a href="#">发票制度</a></p>
+            <p><a href="#">账户管理</a></p>
+            <p><a href="#">会员优惠</a></p>
+          </li>
+          <li>
+            <h3>支付方式</h3>
+            <p><a href="#">货到付款</a></p>
+            <p><a href="#">网上支付</a></p>
+            <p><a href="#">礼品卡支付</a></p>
+            <p><a href="#">银行转账</a></p>
+          </li>
+          <li>
+            <h3>订单服务</h3>
+            <p><a href="#">订单配送查询</a></p>
+            <p><a href="#">订单状态说明</a></p>
+            <p><a href="#">自助取消订单</a></p>
+            <p><a href="#">自助修改订单</a></p>
+          </li>
+          <li>
+            <h3>退换货</h3>
+            <p><a href="#">退换货政策</a></p>
+            <p><a href="#">自助申请退换货</a></p>
+            <p><a href="#">退换货进度查询</a></p>
+            <p><a href="#">退款方式和时间</a></p>
+          </li>
+          <li>
+            <h3>商家服务</h3>
+            <p><a href="#">商家中心</a></p>
+            <p><a href="#">运营服务</a></p>
+            <p><a href="#">加入唯品汇</a></p>
+          </li>
+        </ul>
+        <div class="shop-icon footer-logo"></div>
+      </div>
+      <ul class="nav wrapper clear-float">
+        <li><a href="#">公司简介</a></li>
+        <li><a href="#">Investor Relations</a></li>
+        <li><a href="#">网站联盟</a></li>
+        <li><a href="#">乐购招商</a></li>
+        <li><a href="#">机构销售</a></li>
+        <li><a href="#">手机乐购</a></li>
+        <li><a href="#">官方Blog</a></li>
+        <li><a href="#">热词搜索</a></li>
+      </ul>
+      <p class="copyright wrapper">Copyright (C) 乐购网 2004-2016, All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

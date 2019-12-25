@@ -6,6 +6,28 @@
 }
 #header .top .wrapper {
   padding-right: 12px;
+  position: relative;
+}
+#header .top .logo {
+  width: 200px;
+  height: 84px;
+  background-image: url('../images/LogoBG.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  position: absolute;
+  left: 6px;
+  top: 0;
+}
+#header .top .logo > div {
+  width: 66px;
+  height: 54px;
+  color: #fff;
+  font: 20px/24px 'SimHei';
+  margin: 20px 0 0 116px;
+}
+#header .top .logo > div > hr {
+  border: none;
+  border-top: 2px solid #fff;
 }
 /* 搜索栏 */
 #header .search-cart {
@@ -56,7 +78,7 @@ label[for='search'] > button {
   height: 28px;
   font: 14px/28px 'SimHei';
   color: #fff;
-  background: #ff6700;
+  background-color: #ff6700;
   text-align: center;
   position: relative;
 }
@@ -66,26 +88,7 @@ label[for='search'] > button {
   right: 35px;
   top: 4px;
 }
-#header .nav .menu-title .logo {
-  width: 200px;
-  height: 84px;
-  background-image: url('../images/LogoBG.png');
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 0;
-  bottom: 28px;
-}
-#header .nav .menu-title .logo > div {
-  width: 66px;
-  height: 54px;
-  color: #fff;
-  font: 20px/24px 'SimHei';
-  margin: 20px 0 0 116px;
-}
-#header .nav .menu-title .logo > div > hr {
-  border: none;
-  border-top: 2px solid #fff;
-}
+
 #header .nav .nav-menu {
   padding: 0 20px;
 }

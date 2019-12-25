@@ -5,6 +5,11 @@
 .fr {
   float: right;
 }
+.clear {
+  clear: both;
+  font-size: 0;
+  height: 0;
+}
 .clear-float::after {
   visibility: hidden;
   font-size: 0;

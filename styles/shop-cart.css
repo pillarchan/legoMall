@@ -1,0 +1,132 @@
+/* 购物车头部样式的调整 */
+#header .top .logo {
+  width: 258px;
+  height: 105px;
+  background-color: #f60;
+}
+#header .top .logo > div {
+  width: 100px;
+  height: 105px;
+  color: #fff;
+  font: 28px/105px 'SimHei';
+  margin: 0 0 0 120px;
+}
+.shop-cart .deliver-area {
+  padding-right: 20px;
+  font-size: 14px;
+}
+.shop-cart .title {
+  padding-top: 42px;
+  font: 22px/34px 'SimHei';
+  color: #f60;
+}
+.shop-cart .cart-head {
+  font: 18px/60px 'SimHei';
+  color: #aaa;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.shop-cart .select {
+  width: 70px;
+}
+.shop-cart .goods-name {
+  width: 544px;
+}
+.shop-cart .blank-column {
+  height: 20px;
+}
+.shop-cart .single-price {
+  width: 100px;
+}
+.shop-cart .num {
+  width: 200px;
+}
+.shop-cart .subtotal {
+  width: 110px;
+}
+.shop-cart .operation {
+  width: 176px;
+}
+.shop-cart .cart-list {
+  text-align: center;
+  vertical-align: top;
+  border-bottom: 2px solid #f2f2f2;
+}
+.shop-cart .cart-list.cart-list-first {
+  border-top: 6px solid #dfdfdf;
+}
+.shop-cart .cart-list.cart-list-first > td,
+.shop-cart .cart-list > td {
+  padding: 20px 0;
+}
+.shop-cart .cart-list .select {
+  text-align: left;
+  text-indent: 10px;
+}
+.shop-cart .cart-list .goods-name > img {
+  border: 1px solid #ccc;
+  vertical-align: top;
+}
+.shop-cart .cart-list .goods-name {
+  text-align: left;
+  text-indent: 5px;
+  color: #333;
+  font-size: 14px;
+}
+.shop-cart .cart-list .num {
+  font-size: 0;
+}
+.shop-cart .cart-list .num > span {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  font: 12px/24px '';
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #333;
+  cursor: pointer;
+}
+.shop-cart .cart-list .num > input {
+  width: 72px;
+  height: 24px;
+  font: 12px/24px '';
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-color: #ccc transparent;
+  color: #333;
+  outline: none;
+}
+.shop-cart .cart-list .subtotal {
+  font-size: 18px;
+  font-weight: bold;
+}
+.shop-cart .bill {
+  padding: 20px 0;
+}
+.shop-cart .bill .left {
+  width: 1070px;
+  height: 58px;
+  border: 1px solid #ccc;
+  font: 16px/58px 'SimHei';
+  color: #999;
+  text-indent: 20px;
+}
+.shop-cart .bill .pay {
+  width: 128px;
+  height: 60px;
+  font: 28px/60px 'SimHei';
+  text-align: center;
+  color: #fff;
+  background-color: #f60;
+}
+.shop-cart .bill .total,
+.shop-cart .allNum {
+  color: #f60;
+  font-size: 20px;
+}
+.shop-cart a {
+  color: #999;
+}
+.;
