@@ -1,0 +1,165 @@
+.details {
+  height: 596px;
+  background-color: #f2f2f2;
+}
+.details .title {
+  height: 54px;
+  font: 16px/54px 'SimHei';
+  text-indent: 5px;
+}
+.details .title > span {
+  font-size: 28px;
+}
+.details .content {
+  height: 512px;
+  box-sizing: border-box;
+  padding: 14px;
+  background-color: #fff;
+}
+.details .content .left {
+  width: 340px;
+  height: 512px;
+}
+.details .content .left .img {
+  width: 340px;
+  height: 350px;
+  background-color: #fcfcfc;
+}
+.details .content .left .detail {
+  height: 106px;
+  background-color: #ccc;
+}
+.details .content .left .product-id {
+  font: 16px/24px 'SimHei';
+  color: #666;
+  text-align: center;
+}
+.details .content .right {
+  width: 790px;
+  height: 512px;
+  padding: 20px;
+}
+.details .content .right > p {
+  text-indent: 15px;
+}
+.details .content .right .title {
+  height: 36px;
+  font: 22px/36px 'SimHei';
+  color: #333;
+}
+.details .content .right .desc {
+  height: 36px;
+  font: 18px/36px 'SimHei';
+  color: #f9312d;
+}
+.details .content .right .author {
+  height: 36px;
+  font: 16lpx/36px 'SimHei';
+  color: #999;
+}
+.details .content .right .info {
+  width: 790px;
+  height: 140px;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+}
+.details .content .right .info > p {
+  text-indent: 15px;
+}
+.details .content .right .info .price,
+.details .content .right .info .promotion-info {
+  height: 36px;
+  font: 16px/36px 'SimHei';
+  color: #999;
+}
+.details .content .right .info .price > span,
+.details .content .right .info .promotion-info > span {
+  color: #fa0e0d;
+}
+.details .content .right .info .price > span {
+  font-size: 20px;
+}
+.details .content .right .info .ticket {
+  padding-top: 24px;
+  height: 28px;
+  font: 16px/28px 'SimHei';
+  color: #999;
+}
+.details .content .right .info .ticket > span {
+  display: inline-block;
+  width: 90px;
+  height: 28px;
+  background-color: #f60;
+  color: #fff;
+  text-indent: 25px;
+}
+.details .content .right .kind {
+  height: 34px;
+  padding: 16px 0 16px 18px;
+}
+.details .content .right .kind > p {
+  float: left;
+  width: 98px;
+  height: 32px;
+  font: 16px/32px 'SimHei';
+  border: 1px solid #ccc;
+  text-align: center;
+  color: #999;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.details .content .right .kind .normal.active {
+  border-color: #f60;
+}
+.details .content .right .kind .choose {
+  border: none;
+}
+.details .content .right .add-cart {
+  width: 278px;
+  height: 60px;
+  padding: 38px 0 25px 0;
+}
+.details .content .right .add-cart .get-num {
+  height: 42px;
+  width: 60px;
+  position: relative;
+  padding: 10px 0 0 16px;
+}
+.details .content .right .add-cart .get-num .num {
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  outline: none;
+  color: #808080;
+}
+.details .content .right .add-cart .get-num > span {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  font: 12px/18px '';
+  border: 1px solid #aaa;
+  color: #808080;
+  cursor: pointer;
+  right: 1px;
+}
+.details .content .right .add-cart .get-num .reduce {
+  top: 30px;
+}
+
+.details .content .right .add-cart .join-cart {
+  display: inline-block;
+  width: 190px;
+  height: 60px;
+  text-align: center;
+  font: 26px/60px 'SimHei';
+  color: #fff;
+  background-color: #f60;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.details .content .right .tips {
+  font: 16px/16px 'SimHei';
+  color: #808080;
+  text-indent: 16px;
+}
