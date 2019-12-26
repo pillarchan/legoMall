@@ -19,15 +19,7 @@
 .details .content .left {
   width: 340px;
   height: 512px;
-}
-.details .content .left .img {
-  width: 340px;
-  height: 350px;
-  background-color: #fcfcfc;
-}
-.details .content .left .detail {
-  height: 106px;
-  background-color: #ccc;
+  box-sizing: border-box;
 }
 .details .content .left .product-id {
   font: 16px/24px 'SimHei';
@@ -108,8 +100,8 @@
   margin-right: 8px;
   cursor: pointer;
 }
-.details .content .right .kind .normal.active {
-  border-color: #f60;
+.active {
+  border-color: #f60 !important;
 }
 .details .content .right .kind .choose {
   border: none;

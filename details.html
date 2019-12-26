@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/common.css" />
     <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/magnifier.css" />
     <!-- 当前页样式 -->
     <link rel="stylesheet" href="./styles/details.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
   </head>
   <body>
     <script src="./scriptes/jquery-1.11.0.js"></script>
+    <script src="./scriptes/magnifier.js"></script>
+    <script src="./scriptes/details.js"></script>
     <!-- 头部 -->
     <header id="header">
       <div class="search-column">
@@ -76,10 +79,53 @@
         <div class="title"><span>图书</span> &gt; 小说 &gt; 情感/家庭/婚姻 &gt;&emsp;博集天卷 &gt; 她和他</div>
         <div class="content clear-float">
           <div class="left fl">
-            <div class="img">
-              <img class="w100" src="./images/demo-ebook1.jpg" alt="" />
+            <div class="magnifier" id="magnifier1">
+              <div class="magnifier-container">
+                <div class="images-cover"></div>
+                <!--当前图片显示容器-->
+                <div class="move-view"></div>
+                <!--跟随鼠标移动的盒子-->
+              </div>
+              <div class="magnifier-assembly">
+                <div class="magnifier-btn">
+                  <span class="magnifier-btn-left">&lt;</span>
+                  <span class="magnifier-btn-right">&gt;</span>
+                </div>
+                <!--按钮组-->
+                <div class="magnifier-line">
+                  <ul class="clearfix animation03">
+                    <li>
+                      <div class="small-img">
+                        <img src="./images/demo-ebook1.jpg" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="small-img">
+                        <img src="./images/demo-ebook2.jpg" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="small-img">
+                        <img src="./images/demo-ebook3.jpg" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="small-img">
+                        <img src="./images/demo-ebook4.jpg" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="small-img">
+                        <img src="./images/demo-ebook5.jpg" />
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!--缩略图-->
+              </div>
+              <div class="magnifier-view"></div>
+              <!--经过放大的图片显示容器-->
             </div>
-            <div class="detail"></div>
             <div class="product-id">商品编号: 11950959</div>
           </div>
           <div class="right fr">
